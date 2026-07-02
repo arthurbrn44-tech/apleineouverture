@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO ===== -->
+<title>Création de site internet pour architecte d'intérieur | À Pleine Ouverture</title>
+<meta name="description" content="Un site internet d'architecte d'intérieur qui révèle votre style, votre personnalité et vos réalisations, et installe la confiance avant le premier contact. Maquette gratuite et sans engagement.">
+<meta name="keywords" content="création site internet architecte d'intérieur, site web architecte d'intérieur, portfolio architecte d'intérieur, site décorateur d'intérieur">
+<meta name="author" content="À Pleine Ouverture">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.apleineouverture.fr/architecte-interieur.html">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.apleineouverture.fr/architecte-interieur.html">
+<meta property="og:title" content="Création de site internet pour architecte d'intérieur">
+<meta property="og:description" content="On révèle votre style, votre personnalité et vos réalisations. Maquette gratuite et sans engagement.">
+<meta property="og:image" content="https://www.apleineouverture.fr/hero-poster.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="À Pleine Ouverture">
+
+<!-- ===== Structured Data · FAQ ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pourquoi refaire le site internet d'un architecte d'intérieur ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Parce que votre travail est visuel et que la plupart des sites ne rendent pas justice à votre regard. Un site conçu pour vous transmet votre style, votre personnalité et vos réalisations, et installe la confiance avant même le premier contact." }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment présenter mes réalisations d'architecte d'intérieur en ligne ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Avec une mise en page pensée pour vos projets : de grandes images, une histoire pour chaque réalisation, et un parcours qui met en avant autant votre démarche que le résultat final." }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps faut-il pour créer le site ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "En général de cinq à huit semaines, selon le nombre de pages et de projets à présenter. On s'occupe de tout, des textes au référencement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Et si je n'ai pas le temps de m'en occuper ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "C'est justement notre rôle. On écrit les textes, on structure le site et on l'optimise pour Google. Vous validez, vous n'avez rien à rédiger." }
+    }
+  ]
+}
+</script>
+
+<!-- ===== Structured Data · Fil d'Ariane ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.apleineouverture.fr/" },
+    { "@type": "ListItem", "position": 2, "name": "Sites pour architectes d'intérieur", "item": "https://www.apleineouverture.fr/architecte-interieur.html" }
+  ]
+}
+</script>
+
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+<meta name="theme-color" content="#F7F4EE">
+
+<style>
+/* ====================================================================
+   DESIGN TOKENS (identiques au site)
+   ==================================================================== */
+:root {
+  --bg:        #F7F4EE;
+  --bg-alt:    #EFEAE1;
+  --ink:       #1B1815;
+  --muted:     #6E665B;
+  --line:      #E4DDD2;
+  --accent:    #059669;
+  --accent-dk: #047857;
+  --accent-lt: #6EE7B7;
+  --blueprint: #36617E;
+  --concrete:  #232020;
+  --concrete-2:#1A1817;
+  --dark-fg:   #F4EEE6;
+  --dark-muted:#A89E90;
+  --sand:      #E2C9A6;
+
+  --serif: "Newsreader", "Times New Roman", serif;
+  --sans:  "Satoshi", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --mono:  "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --r-sm: 8px;
+  --r-lg: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+body.modal-open { overflow: hidden; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+p { margin: 0; }
+h1, h2, h3, h4 { margin: 0; font-weight: 500; letter-spacing: -0.01em; }
+
+.container { width: 100%; max-width: 1240px; padding: 0 24px; margin: 0 auto; }
+@media (min-width: 1024px) { .container { padding: 0 56px; } }
+section { position: relative; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before { content: ""; width: 24px; height: 1px; background: currentColor; opacity: 0.5; }
+.section.dark .section-label { color: var(--dark-muted); }
+
+.h-section {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 4.4vw, 56px);
+  line-height: 1.07;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.h-section em { font-style: italic; font-weight: 300; color: var(--accent); }
+.section.dark .h-section em { color: var(--sand); }
+.lede { font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; color: var(--muted); max-width: 60ch; }
+.section.dark .lede { color: var(--dark-muted); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 24px; border-radius: var(--r-sm);
+  font-family: var(--sans); font-weight: 500; font-size: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  will-change: transform;
+}
+.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px -10px rgba(5,150,105,0.5); }
+.btn-primary:hover { background: var(--accent-dk); transform: translateY(-1px); }
+.btn-primary .arrow { transition: transform 0.3s ease; }
+.btn-primary:hover .arrow { transform: translateX(4px); }
+
+/* NAV */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(247,244,238,0.88);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+.brand { display: inline-flex; align-items: baseline; gap: 4px; font-family: var(--serif); font-weight: 600; font-size: 22px; letter-spacing: -0.02em; }
+.brand .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; margin-left: 2px; transform: translateY(-2px); }
+.nav-right { display: flex; align-items: center; gap: 24px; }
+.nav-back { font-size: 14px; color: var(--muted); display: none; align-items: center; gap: 6px; transition: color 0.25s ease; }
+.nav-back:hover { color: var(--ink); }
+.nav-cta {
+  font-family: var(--sans); font-weight: 500; font-size: 13.5px;
+  padding: 10px 18px; border-radius: var(--r-sm);
+  background: var(--accent); color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease; will-change: transform;
+}
+.nav-cta:hover { background: var(--accent-dk); transform: translateY(-1px); }
+@media (min-width: 768px) { .nav-back { display: inline-flex; } }
+
+/* PAGE HEADER */
+.page-header { padding: 150px 0 100px; border-bottom: 1px solid var(--line); }
+.ph-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+@media (min-width: 1024px) { .ph-grid { grid-template-columns: 1.1fr 0.9fr; gap: 80px; } }
+.ph-eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 24px; }
+.ph-title { font-family: var(--serif); font-weight: 400; font-size: clamp(38px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance; }
+.ph-title em { font-style: italic; font-weight: 300; color: var(--accent); }
+.ph-sub { font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; color: var(--muted); margin-top: 28px; max-width: 52ch; }
+.ph-cta { margin-top: 40px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.ph-note { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--muted); }
+.ph-visual { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 5; box-shadow: 0 40px 80px -40px rgba(27,24,21,0.35); transform: rotate(-1.2deg); }
+.ph-visual img { width: 100%; height: 100%; object-fit: cover; }
+
+/* SECTIONS */
+.section { padding: 120px 0; border-top: 1px solid var(--line); }
+.section.dark { background: var(--concrete); color: var(--dark-fg); border-top: none; }
+.section.alt { background: var(--bg-alt); }
+.section-head { margin-bottom: 64px; max-width: 60ch; }
+.section-head .h-section { margin-top: 22px; }
+
+.prose-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+@media (min-width: 1024px) { .prose-grid { grid-template-columns: 1fr 1fr; gap: 80px; } }
+.prose-grid.reverse > .prose-visual { order: -1; }
+@media (min-width: 1024px) { .prose-grid.reverse > .prose-visual { order: 0; } }
+.prose-copy p { color: var(--muted); font-size: 17px; line-height: 1.75; margin-bottom: 20px; max-width: 56ch; }
+.prose-copy p:last-child { margin-bottom: 0; }
+.prose-copy strong { color: var(--ink); font-weight: 600; }
+.section.dark .prose-copy p { color: var(--dark-muted); }
+.section.dark .prose-copy strong { color: var(--dark-fg); }
+.prose-visual { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: 0 30px 70px -40px rgba(27,24,21,0.25); }
+.prose-visual img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Liste de points forts */
+.points { margin-top: 28px; display: grid; gap: 14px; }
+.point { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; }
+.point svg { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.point span { color: var(--muted); font-size: 16.5px; line-height: 1.6; }
+
+/* Méthode (steps) */
+.steps { display: grid; grid-template-columns: 1fr; gap: 48px; margin-top: 16px; }
+@media (min-width: 1024px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+.step { position: relative; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); }
+.step-num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--accent-lt); margin-bottom: 14px; }
+.step h3 { font-family: var(--serif); font-size: 26px; font-weight: 400; letter-spacing: -0.015em; margin-bottom: 14px; }
+.step p { color: var(--dark-muted); font-size: 16px; line-height: 1.65; }
+
+/* FAQ */
+.faq { display: grid; gap: 0; max-width: 820px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer;
+  padding: 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  font-family: var(--serif); font-size: clamp(19px, 2vw, 23px); font-weight: 400; letter-spacing: -0.015em;
+  transition: color 0.25s ease;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--accent); }
+.faq summary .plus { position: relative; width: 18px; height: 18px; flex-shrink: 0; }
+.faq summary .plus::before, .faq summary .plus::after { content: ""; position: absolute; background: var(--accent); transition: transform 0.3s ease; }
+.faq summary .plus::before { left: 0; top: 8px; width: 18px; height: 2px; }
+.faq summary .plus::after { left: 8px; top: 0; width: 2px; height: 18px; }
+.faq details[open] summary .plus::after { transform: scaleY(0); }
+.faq details[open] summary { color: var(--accent); }
+.faq-answer { padding: 0 0 28px; color: var(--muted); font-size: 16.5px; line-height: 1.7; max-width: 64ch; }
+
+/* CTA final */
+.cta { padding: 140px 0; text-align: center; }
+.cta h2 { font-family: var(--serif); font-size: clamp(36px, 5vw, 64px); line-height: 1.04; letter-spacing: -0.025em; font-weight: 400; text-wrap: balance; }
+.cta h2 em { font-style: italic; font-weight: 300; color: var(--accent); }
+.cta .lede { margin: 28px auto 0; text-align: center; }
+.cta .btn { margin-top: 44px; padding: 20px 34px; font-size: 16px; }
+.cta-coords { margin-top: 48px; display: flex; justify-content: center; gap: 8px 40px; flex-wrap: wrap; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.cta-coords a { color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: border-color 0.3s ease, color 0.3s ease; }
+.cta-coords a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* FOOTER */
+footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; font-size: 14px; }
+.foot-grid { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
+@media (min-width: 768px) { .foot-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; } }
+.foot-brand { font-family: var(--serif); font-size: 26px; color: #fff; letter-spacing: -0.02em; }
+.foot-brand .dot { width: 8px; height: 8px; background: var(--accent); display: inline-block; border-radius: 50%; margin-left: 2px; transform: translateY(-3px); }
+.foot-tag { margin-top: 14px; color: #8b8278; max-width: 34ch; line-height: 1.55; }
+.foot-col h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8b8278; margin-bottom: 16px; font-weight: 500; }
+.foot-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.foot-col a { color: #d4cdc4; transition: color 0.3s ease; }
+.foot-col a:hover { color: #fff; }
+.foot-bottom { margin-top: 48px; padding-top: 24px; border-top: 1px solid #332e29; font-family: var(--mono); font-size: 11px; color: #8b8278; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; will-change: opacity, transform; }
+.reveal.in { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: 0.1s; } .reveal.d2 { transition-delay: 0.2s; } .reveal.d3 { transition-delay: 0.3s; }
+
+::selection { background: var(--accent); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* MODALE (identique au site) */
+.modal-backdrop { position: fixed; inset: 0; z-index: 200; background: rgba(20,16,12,0.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center; padding: 24px; opacity: 0; pointer-events: none; transition: opacity 0.35s ease; }
+.modal-backdrop.is-open { opacity: 1; pointer-events: auto; }
+.modal { position: relative; width: 100%; max-width: 540px; background: var(--bg); border-radius: var(--r-lg); box-shadow: 0 50px 120px -30px rgba(20,16,12,0.6); padding: 44px 40px 40px; transform: translateY(24px) scale(0.98); opacity: 0; transition: transform 0.4s cubic-bezier(.2,.8,.2,1), opacity 0.4s ease; overflow: hidden; }
+.modal-backdrop.is-open .modal { transform: none; opacity: 1; }
+@media (max-width: 600px) { .modal { padding: 36px 24px 28px; } }
+.modal-close { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--muted); transition: background 0.25s ease, color 0.25s ease; }
+.modal-close:hover { background: var(--bg-alt); color: var(--ink); }
+.modal-eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.modal h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 3.4vw, 30px); line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 6px; }
+.modal h2 em { font-style: italic; font-weight: 300; color: var(--accent); }
+.modal-progress { display: flex; gap: 6px; margin: 22px 0 26px; }
+.modal-progress span { flex: 1; height: 4px; border-radius: 99px; background: var(--line); transition: background 0.4s ease; }
+.modal-progress span.on { background: var(--accent); }
+.modal-step { display: none; animation: stepIn 0.45s cubic-bezier(.2,.8,.2,1); }
+.modal-step.active { display: block; }
+@keyframes stepIn { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+.field-label { display: block; font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 10px; }
+.field-input, .field-select { width: 100%; font-family: var(--sans); font-size: 16px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 15px 16px; transition: border-color 0.25s ease, box-shadow 0.25s ease; }
+.field-input:focus, .field-select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(5,150,105,0.12); }
+.field-hint { font-size: 13px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+.field-error { font-size: 13px; color: var(--accent-dk); margin-top: 10px; display: none; }
+.field-error.show { display: block; }
+.modal-actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 28px; }
+.modal-back { font-size: 14px; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; transition: color 0.25s ease; }
+.modal-back:hover { color: var(--ink); }
+.modal-back[hidden] { visibility: hidden; }
+.modal-next { margin-left: auto; display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; font-weight: 500; font-size: 15px; padding: 14px 26px; border-radius: var(--r-sm); transition: background 0.25s ease, transform 0.25s ease; }
+.modal-next:hover { background: var(--accent-dk); transform: translateY(-1px); }
+.modal-next:disabled { opacity: 0.6; cursor: progress; }
+.modal-success { text-align: center; padding: 12px 0 6px; }
+.modal-success .check { width: 64px; height: 64px; margin: 0 auto 22px; border-radius: 50%; background: rgba(5,150,105,0.12); color: var(--accent); display: flex; align-items: center; justify-content: center; }
+.modal-success h2 { margin-bottom: 12px; }
+.modal-success p { color: var(--muted); font-size: 16px; line-height: 1.6; max-width: 38ch; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html#top" class="brand" aria-label="À Pleine Ouverture · accueil">
+      À Pleine Ouverture<span class="dot" aria-hidden="true"></span>
+    </a>
+    <div class="nav-right">
+      <a href="index.html#top" class="nav-back">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Accueil
+      </a>
+      <button type="button" class="nav-cta" data-open-modal>Demander ma maquette</button>
+    </div>
+  </div>
+</header>
+
+<!-- HEADER -->
+<header class="page-header">
+  <div class="container">
+    <div class="ph-grid">
+      <div>
+        <p class="ph-eyebrow reveal">Pour les architectes d'intérieur</p>
+        <h1 class="ph-title reveal d1">
+          Votre site d'architecte d'intérieur,<br>
+          à la hauteur de <em>votre travail.</em>
+        </h1>
+        <p class="ph-sub reveal d2">
+          On crée des sites qui révèlent votre style, votre personnalité et vos réalisations. Pour que vos futurs clients comprennent ce que vous valez avant même de vous écrire.
+        </p>
+        <div class="ph-cta reveal d3">
+          <button type="button" class="btn btn-primary" data-open-modal>
+            Demander ma maquette gratuite
+            <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <span class="ph-note">Gratuite et sans engagement · Réponse sous 48h</span>
+        </div>
+      </div>
+      <div class="ph-visual reveal d2">
+        <img src="interior.jpg" alt="Intérieur conçu par un architecte d'intérieur, salon avec mobilier en bois clair" width="1600" height="2000">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION 1 · LE CONSTAT -->
+<section class="section">
+  <div class="container">
+    <div class="prose-grid">
+      <div class="prose-copy">
+        <span class="section-label reveal">01 · Le constat</span>
+        <h2 class="h-section reveal d1" style="margin: 22px 0 28px;">
+          Votre travail se vit avec les yeux.<br>
+          <em>Votre site aussi.</em>
+        </h2>
+        <p class="reveal d1">Un projet d'architecte d'intérieur, ça se ressent : les volumes, la lumière, les matières, l'équilibre d'un espace. C'est précisément ce qu'un site générique n'arrive pas à transmettre.</p>
+        <p class="reveal d2">Nous, on conçoit votre site comme vous concevez un intérieur : pensé dans le détail, dessiné pour vous seul, fidèle à votre regard. Le résultat vous ressemble, et il donne envie d'aller plus loin.</p>
+      </div>
+      <div class="prose-visual reveal d1">
+        <img src="stone-room.jpg" alt="Pièce avec mur en pierres apparentes et verrière en acier, réalisation d'architecte d'intérieur" loading="lazy" width="1600" height="1200">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 · NOTRE PARTI PRIS -->
+<section class="section alt">
+  <div class="container">
+    <div class="prose-grid reverse">
+      <div class="prose-visual reveal d1">
+        <img src="materials.jpg" alt="Échantillons de matières et de matériaux pour un projet de décoration d'intérieur" loading="lazy" width="1600" height="1200">
+      </div>
+      <div class="prose-copy">
+        <span class="section-label reveal">02 · Notre parti pris</span>
+        <h2 class="h-section reveal d1" style="margin: 22px 0 28px;">
+          On met en avant l'humain,<br>
+          autant que <em>les réalisations.</em>
+        </h2>
+        <p class="reveal d1">Votre regard, votre façon d'écouter, votre signature : c'est ce qui crée la confiance et qui fait qu'un client vous choisit, vous, et pas un autre.</p>
+        <p class="reveal d2"><strong>On construit un site qui raconte votre univers et votre personnalité</strong>, et qui présente vos réalisations comme elles le méritent.</p>
+        <div class="points reveal d2">
+          <div class="point"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Votre style et votre signature, lisibles dès la première seconde</span></div>
+          <div class="point"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Vos réalisations mises en valeur, en grand, avec leur histoire</span></div>
+          <div class="point"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Un message clair qui vous distingue des autres</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 · MÉTHODE -->
+<section class="section dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">03 · Notre méthode</span>
+      <h2 class="h-section reveal d1">Comment on s'y <em>prend.</em></h2>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <div class="step-num">Étape 01</div>
+        <h3>Immersion</h3>
+        <p>On prend le temps de comprendre votre métier : votre style, votre façon de travailler, ce que vos clients retiennent de vous. C'est la base de tout le reste.</p>
+      </article>
+      <article class="step reveal d1">
+        <div class="step-num">Étape 02</div>
+        <h3>Positionnement</h3>
+        <p>On formule ce qui vous rend unique : le message, l'angle, l'histoire. Ce que votre site doit dire pour que les bons clients vous contactent.</p>
+      </article>
+      <article class="step reveal d2">
+        <div class="step-num">Étape 03</div>
+        <h3>Construction</h3>
+        <p>On conçoit et on développe le site. Design dessiné pour votre métier, textes écrits à votre place, optimisé pour Google. Vous n'avez rien à rédiger.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 · FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label reveal">04 · Questions fréquentes</span>
+      <h2 class="h-section reveal d1">Ce que les architectes nous <em>demandent souvent.</em></h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Pourquoi refaire mon site d'architecte d'intérieur ?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="faq-answer">Parce que votre travail est visuel et que la plupart des sites ne rendent pas justice à votre regard. Un site conçu pour vous transmet votre style, votre personnalité et vos réalisations, et installe la confiance avant même le premier contact.</div>
+      </details>
+      <details>
+        <summary>Comment présenter mes réalisations en ligne ?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="faq-answer">Avec une mise en page pensée pour vos projets : de grandes images, une histoire pour chaque réalisation, et un parcours qui met en avant autant votre démarche que le résultat final.</div>
+      </details>
+      <details>
+        <summary>Combien de temps faut-il pour créer le site ?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="faq-answer">En général de cinq à huit semaines, selon le nombre de pages et de projets à présenter. On s'occupe de tout, des textes au référencement.</div>
+      </details>
+      <details>
+        <summary>Et si je n'ai pas le temps de m'en occuper ?<span class="plus" aria-hidden="true"></span></summary>
+        <div class="faq-answer">C'est justement notre rôle. On écrit les textes, on structure le site et on l'optimise pour Google. Vous validez, vous n'avez rien à rédiger.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta alt">
+  <div class="container">
+    <span class="section-label reveal" style="justify-content: center; display: inline-flex; margin-bottom: 28px;">On commence ensemble</span>
+    <h2 class="reveal d1">Et si on commençait par<br><em>votre maquette ?</em></h2>
+    <p class="lede reveal d2" style="margin-left:auto;margin-right:auto;">
+      On vous crée une maquette de votre futur site, gratuitement et sans engagement. Vous voyez exactement ce qu'on ferait pour vous, vous décidez ensuite.
+    </p>
+    <div class="reveal d3">
+      <button type="button" class="btn btn-primary" data-open-modal>
+        Demander ma maquette gratuite
+        <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+    <div class="cta-coords reveal d3">
+      <a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a>
+      <a href="tel:+33673744323">+33 6 73 74 43 23</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">À Pleine Ouverture<span class="dot" aria-hidden="true"></span></div>
+        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#qui-sommes-nous">Qui sommes-nous</a></li>
+          <li><a href="index.html#approche">L'approche</a></li>
+          <li><a href="index.html#pour-qui">Pour qui</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Métiers</h4>
+        <ul>
+          <li><a href="maitre-oeuvre.html">Maîtres d'œuvre</a></li>
+          <li><a href="architecte-interieur.html">Architectes d'intérieur</a></li>
+          <li><a href="artisan-batiment.html">Artisans du bâtiment</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a></li>
+          <li><a href="tel:+33673744323">+33 6 73 74 43 23</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 À Pleine Ouverture · Tous droits réservés</div>
+  </div>
+</footer>
+
+<!-- MODALE -->
+<div class="modal-backdrop" id="leadModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" data-close-modal aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+    <p class="modal-eyebrow">Maquette gratuite</p>
+    <h2 id="modalTitle">Faisons <em>connaissance.</em></h2>
+    <div class="modal-progress" aria-hidden="true">
+      <span class="on"></span><span></span><span></span><span></span><span></span>
+    </div>
+    <form id="leadForm" novalidate>
+      <div class="modal-steps">
+        <div class="modal-step active" data-step="1">
+          <label class="field-label" for="f-name">Votre nom et prénom</label>
+          <input class="field-input" id="f-name" name="name" type="text" autocomplete="name" placeholder="Ex. Jean Dupont" required>
+          <p class="field-error" data-error>Merci d'indiquer votre nom et prénom.</p>
+        </div>
+        <div class="modal-step" data-step="2">
+          <label class="field-label" for="f-company">Le nom de votre entreprise</label>
+          <input class="field-input" id="f-company" name="company" type="text" autocomplete="organization" placeholder="Ex. Atelier Dupont" required>
+          <p class="field-error" data-error>Merci d'indiquer le nom de votre entreprise.</p>
+        </div>
+        <div class="modal-step" data-step="3">
+          <label class="field-label" for="f-email">Votre adresse e-mail</label>
+          <input class="field-input" id="f-email" name="email" type="email" autocomplete="email" placeholder="Ex. jean@exemple.fr" required>
+          <p class="field-hint">On l'utilise uniquement pour vous envoyer votre maquette et vous recontacter.</p>
+          <p class="field-error" data-error>Merci d'indiquer une adresse e-mail valide.</p>
+        </div>
+        <div class="modal-step" data-step="4">
+          <label class="field-label" for="f-phone">Votre numéro de téléphone</label>
+          <input class="field-input" id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Ex. 06 12 34 56 78" required>
+          <p class="field-hint">Pour vous rappeler et présenter votre maquette de vive voix.</p>
+          <p class="field-error" data-error>Merci d'indiquer un numéro de téléphone valide.</p>
+        </div>
+        <div class="modal-step" data-step="5">
+          <label class="field-label" for="f-interest">Par quoi êtes-vous intéressé ?</label>
+          <select class="field-select" id="f-interest" name="interest" required>
+            <option value="" disabled selected>Choisissez une option…</option>
+            <option value="Améliorer mon site web">Améliorer mon site web</option>
+            <option value="Améliorer mon référencement (SEO)">Améliorer mon référencement (SEO)</option>
+            <option value="Créer mon site (je n'en ai pas encore)">Créer mon site (je n'en ai pas encore)</option>
+            <option value="Refonte complète de mon site">Refonte complète de mon site</option>
+            <option value="Autre">Autre</option>
+          </select>
+          <p class="field-hint">Ça nous aide à préparer une maquette vraiment adaptée à votre besoin.</p>
+          <p class="field-error" data-error>Merci de choisir une option.</p>
+        </div>
+        <div class="modal-step" data-step="success">
+          <div class="modal-success">
+            <div class="check" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h2>C'est noté, merci !</h2>
+            <p>On a bien reçu votre demande. On revient vers vous sous 48h pour préparer votre maquette gratuite.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions" data-actions>
+        <button type="button" class="modal-back" data-back hidden>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Retour
+        </button>
+        <button type="submit" class="modal-next" data-next>
+          <span data-next-label>Suivant</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var finePointer = window.matchMedia('(pointer: fine)').matches;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Reveal on scroll */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* Boutons magnétiques */
+  if (finePointer && !reduceMotion) {
+    document.querySelectorAll('.btn-primary, .nav-cta').forEach(function (btn) {
+      btn.addEventListener('pointermove', function (e) {
+        var r = btn.getBoundingClientRect();
+        var mx = (e.clientX - r.left - r.width / 2) * 0.25;
+        var my = (e.clientY - r.top - r.height / 2) * 0.35;
+        btn.style.transform = 'translate(' + mx.toFixed(1) + 'px,' + my.toFixed(1) + 'px)';
+      });
+      btn.addEventListener('pointerleave', function () { btn.style.transform = ''; });
+    });
+  }
+
+  /* ====================================================================
+     MODALE · formulaire multi-étapes + Web3Forms
+     ⚠️ Colle ta clé Web3Forms (gratuite sur web3forms.com) ci-dessous.
+     ==================================================================== */
+  var WEB3FORMS_KEY = 'abce287d-93d5-4c92-82a6-7e308ca032ea';
+
+  var modal = document.getElementById('leadModal');
+  var form  = document.getElementById('leadForm');
+  if (!modal || !form) return;
+
+  var dots      = modal.querySelectorAll('.modal-progress span');
+  var steps     = Array.prototype.slice.call(form.querySelectorAll('.modal-step'));
+  var backBtn   = form.querySelector('[data-back]');
+  var nextBtn   = form.querySelector('[data-next]');
+  var nextLabel = form.querySelector('[data-next-label]');
+  var actions   = form.querySelector('[data-actions]');
+  var lastFocus = null;
+  var current   = 1;
+  var TOTAL     = 5;
+
+  function stepEl(n) { return steps.find(function (s) { return s.getAttribute('data-step') == String(n); }); }
+
+  function show(n) {
+    steps.forEach(function (s) { s.classList.remove('active'); });
+    var el = (n === 'success') ? stepEl('success') : stepEl(n);
+    if (el) el.classList.add('active');
+    if (n === 'success') {
+      actions.style.display = 'none';
+      for (var i = 0; i < dots.length; i++) dots[i].classList.add('on');
+      return;
+    }
+    actions.style.display = '';
+    backBtn.hidden = (n === 1);
+    nextLabel.textContent = (n === TOTAL) ? 'Terminer' : 'Suivant';
+    for (var j = 0; j < dots.length; j++) dots[j].classList.toggle('on', j < n);
+    var input = el.querySelector('input, select');
+    if (input) setTimeout(function () { input.focus(); }, 60);
+  }
+  function clearError(el) { var e = el.querySelector('[data-error]'); if (e) e.classList.remove('show'); }
+  function showError(el) { var e = el.querySelector('[data-error]'); if (e) e.classList.add('show'); }
+  function validate(n) {
+    var el = stepEl(n);
+    var field = el.querySelector('input, select');
+    if (!field) return true;
+    var v = (field.value || '').trim();
+    var ok = true;
+    if (n === 3) { ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+    else if (n === 4) { ok = v.replace(/[^\d]/g, '').length >= 8; }
+    else { ok = v.length > 0; }
+    if (ok) clearError(el); else showError(el);
+    return ok;
+  }
+  function open() {
+    lastFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    current = 1; show(1);
+  }
+  function close() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(function (b) { b.addEventListener('click', open); });
+  modal.querySelectorAll('[data-close-modal]').forEach(function (b) { b.addEventListener('click', close); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('is-open')) close(); });
+  backBtn.addEventListener('click', function () { if (current > 1) { current--; show(current); } });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validate(current)) return;
+    if (current < TOTAL) { current++; show(current); return; }
+    submit();
+  });
+  function submit() {
+    nextBtn.disabled = true; nextLabel.textContent = 'Envoi…';
+    var payload = {
+      access_key: WEB3FORMS_KEY,
+      subject: 'Nouvelle demande de maquette · Architecte d\'intérieur',
+      from_name: 'À Pleine Ouverture',
+      name:     form.querySelector('#f-name').value.trim(),
+      company:  form.querySelector('#f-company').value.trim(),
+      email:    form.querySelector('#f-email').value.trim(),
+      phone:    form.querySelector('#f-phone').value.trim(),
+      interest: form.querySelector('#f-interest').value,
+      page:     'architecte-interieur'
+    };
+    if (WEB3FORMS_KEY === 'VOTRE_CLE_WEB3FORMS') {
+      console.warn('[Web3Forms] Cle non configuree : renseigne WEB3FORMS_KEY.');
+      console.info('[Lead capte]', payload);
+      current = 'success'; show('success'); nextBtn.disabled = false; return;
+    }
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (data && data.success) { current = 'success'; show('success'); }
+      else { throw new Error(data && data.message ? data.message : 'Echec'); }
+    })
+    .catch(function (err) {
+      console.error('[Web3Forms]', err);
+      nextBtn.disabled = false; nextLabel.textContent = 'Réessayer';
+      var el = stepEl(TOTAL); showError(el);
+      var ee = el.querySelector('[data-error]');
+      if (ee) ee.textContent = 'Une erreur est survenue. Réessayez, ou écrivez-nous directement.';
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

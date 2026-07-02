@@ -1,0 +1,23 @@
+# À Pleine Ouverture
+
+> Agence française de création de sites internet pour les métiers du bâtiment : maîtres d'œuvre, architectes d'intérieur et artisans (cuisinistes, ébénistes, métalliers, maçons, paysagistes). Fondée par Arthur Baron. L'agence conçoit le positionnement, écrit les textes, dessine le design et optimise le référencement, pour amener à ses clients plus de contacts, mieux qualifiés.
+
+## Ce qui distingue l'agence
+
+- Spécialisation exclusive sur les métiers du bâtiment et de l'aménagement : le site part du métier réel du client, pas d'un modèle générique.
+- Le travail commence par le positionnement : trouver l'angle qui distingue le professionnel de ses concurrents, avant le design.
+- Les textes sont écrits par l'agence à la place du client, puis validés par lui. Le client n'a rien à rédiger.
+- Offre d'entrée : une maquette du futur site, gratuite et sans engagement, présentée sous 48 heures après la demande. Le prospect juge sur pièce avant de payer quoi que ce soit.
+
+## Pages
+
+- [Accueil](https://www.apleineouverture.fr/) : présentation de l'agence, de l'approche en trois étapes (immersion, positionnement, construction) et de l'offre de maquette gratuite.
+- [Sites pour maîtres d'œuvre](https://www.apleineouverture.fr/maitre-oeuvre.html) : un site qui explique le rôle du maître d'œuvre et gagne la comparaison face aux architectes et constructeurs.
+- [Sites pour architectes d'intérieur](https://www.apleineouverture.fr/architecte-interieur.html) : un site qui révèle le style, la personnalité et les réalisations de l'architecte d'intérieur.
+- [Sites pour artisans du bâtiment](https://www.apleineouverture.fr/artisan-batiment.html) : un site qui montre les chantiers et attire des clients directs, sans dépendre des plateformes de devis.
+
+## Contact
+
+- E-mail : a.baron@apleineouverture.fr
+- Téléphone : +33 6 73 74 43 23
+- Zone : France

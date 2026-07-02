@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQ9D77WMC"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-6ZQ9D77WMC');
-    </script>
-  
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Signal — Nous valorisons votre travail à sa juste valeur</title>
-<meta name="description" content="Signal crée des sites internet sur mesure pour les maîtres d'œuvre, architectes d'intérieur et artisans haut de gamme. Nous valorisons votre travail à sa juste valeur.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fonts -->
+<!-- ===== SEO de base ===== -->
+<title>Sites internet pour maîtres d'œuvre, architectes d'intérieur et artisans | À Pleine Ouverture</title>
+<meta name="description" content="À Pleine Ouverture crée des sites internet pour les maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment : un message clair, un site qui attire des clients mieux qualifiés. Maquette gratuite et sans engagement.">
+<meta name="keywords" content="site internet maître d'œuvre, site web architecte intérieur, agence web bâtiment, site artisan, création site bâtiment">
+<meta name="author" content="À Pleine Ouverture">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.apleineouverture.fr/">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.apleineouverture.fr/">
+<meta property="og:title" content="À Pleine Ouverture · Sites internet pour les métiers du bâtiment">
+<meta property="og:description" content="On crée des sites qui montrent ce que vous faites vraiment. Maquette gratuite et sans engagement.">
+<meta property="og:image" content="https://www.apleineouverture.fr/hero-poster.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="À Pleine Ouverture">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="À Pleine Ouverture · Sites internet pour les métiers du bâtiment">
+<meta name="twitter:description" content="On crée des sites qui montrent ce que vous faites vraiment.">
+<meta name="twitter:image" content="https://www.apleineouverture.fr/hero-poster.jpg">
+
+<!-- ===== Structured Data ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "À Pleine Ouverture",
+  "description": "Agence de création de sites internet spécialisée pour les maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment. Positionnement, textes, design et référencement : un site qui attire des clients mieux qualifiés.",
+  "url": "https://www.apleineouverture.fr",
+  "telephone": "+33673744323",
+  "email": "a.baron@apleineouverture.fr",
+  "founder": { "@type": "Person", "name": "Arthur Baron" },
+  "areaServed": { "@type": "Country", "name": "France" },
+  "knowsAbout": ["Sites internet pour maîtres d'œuvre", "Sites internet pour architectes d'intérieur", "Sites internet pour artisans du bâtiment"],
+  "serviceType": ["Création de site internet", "Web design", "Référencement SEO"],
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Maquette gratuite",
+    "description": "Une maquette complète de votre futur site, gratuite et sans engagement, présentée sous 48h après analyse de votre activité.",
+    "price": "0",
+    "priceCurrency": "EUR"
+  }
+}
+</script>
+
+<!-- ===== Google Analytics ===== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQ9D77WMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6ZQ9D77WMC');
+</script>
+
+<!-- ===== Performance ===== -->
+<link rel="preload" as="video" href="journey.mp4" type="video/mp4">
+<link rel="preload" as="image" href="hero-poster.jpg">
+<meta name="theme-color" content="#F7F4EE">
+
+<!-- ===== Fonts ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
 
 <style>
-/* ===== Design tokens ===== */
+/* ====================================================================
+   DESIGN TOKENS · univers « Atelier / Bâtiment »
+   Fond plâtre chaud, panneaux sable/kraft, graphite pour les
+   sections sombres, accent VERT ÉMERAUDE, bleu « plan » en accent
+   secondaire. Pas de noir pur.
+   ==================================================================== */
 :root {
-  --bg:        #FAFAF8;
-  --bg-alt:    #F4F4F0;
-  --ink:       #111111;
-  --ink-soft:  #1f1f1f;
-  --muted:     #71717A;
-  --line:      #E5E5E0;
-  --emerald:   #059669;
-  --emerald-dk:#047857;
-  --violet:    #7C3AED;
-  --dark-bg:   #0A0A0A;
-  --dark-fg:   #F8F8F8;
-  --dark-muted:#999999;
+  --bg:        #F7F4EE;   /* plâtre chaud */
+  --bg-alt:    #EFEAE1;   /* sable / kraft */
+  --ink:       #1B1815;   /* encre chaude (texte) */
+  --muted:     #6E665B;   /* taupe */
+  --line:      #E4DDD2;
 
-  --serif: "Fraunces", "Times New Roman", serif;
+  --accent:    #059669;   /* vert émeraude */
+  --accent-dk: #047857;
+  --accent-lt: #6EE7B7;   /* vert clair (sur graphite) */
+  --blueprint: #36617E;   /* bleu plan d'architecte (accent secondaire) */
+
+  --concrete:  #232020;   /* graphite · remplace le noir pur des sections */
+  --concrete-2:#1A1817;
+  --dark-fg:   #F4EEE6;   /* crème (texte sur béton) */
+  --dark-muted:#A89E90;
+  --sand:      #E2C9A6;   /* sable (italiques sur béton) */
+
+  --serif: "Newsreader", "Times New Roman", serif;
   --sans:  "Satoshi", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --mono:  "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
@@ -45,7 +104,9 @@
   --r-lg: 16px;
 }
 
-/* ===== Reset ===== */
+/* ====================================================================
+   RESET & BASE
+   ==================================================================== */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
@@ -55,18 +116,31 @@ body {
   font-family: var(--sans);
   font-size: 17px;
   line-height: 1.7;
-  font-feature-settings: "ss01","ss02";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
-img  { max-width: 100%; display: block; }
-a    { color: inherit; text-decoration: none; }
+body.modal-open { overflow: hidden; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
 button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-p    { margin: 0; }
+p { margin: 0; }
 h1, h2, h3, h4 { margin: 0; font-weight: 500; letter-spacing: -0.01em; }
 
-/* ===== Layout ===== */
+/* Newsreader : serif éditoriale aux lettres calmes (« f » net, pas de
+   zigzag). On garde le crénage et les ligatures courantes. */
+.serif, .h-section, .hero-h1, .hero-intro p, .hero-word span,
+.constat-title, .constat-sub, .approche-step h3, .aud-body h3,
+.contact h2, .brand, .foot-brand, .qui-lead, .agence-badge .v,
+.modal h2 {
+  font-feature-settings: "kern" 1;
+  font-variant-ligatures: common-ligatures;
+}
+
+/* ====================================================================
+   LAYOUT
+   ==================================================================== */
 .container {
   width: 100%;
   max-width: 1240px;
@@ -76,6 +150,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; letter-spacing: -0.01em; }
 @media (min-width: 1024px) { .container { padding: 0 56px; } }
 section { position: relative; }
 
+/* Section labels (mono techniques) */
 .section-label {
   font-family: var(--mono);
   font-size: 12px;
@@ -88,20 +163,14 @@ section { position: relative; }
 }
 .section-label::before {
   content: "";
-  width: 24px; height: 1px;
+  width: 24px;
+  height: 1px;
   background: currentColor;
   opacity: 0.5;
 }
+.section.dark .section-label { color: var(--dark-muted); }
 
-.h-display {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(40px, 6.4vw, 92px);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
-  text-wrap: pretty;
-}
-.h-display em { font-style: italic; font-weight: 300; color: var(--emerald); }
+/* Typographies */
 .h-section {
   font-family: var(--serif);
   font-weight: 400;
@@ -110,15 +179,23 @@ section { position: relative; }
   letter-spacing: -0.02em;
   text-wrap: balance;
 }
-.h-section em { font-style: italic; font-weight: 300; }
+.h-section em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+.section.dark .h-section em { color: var(--sand); }
 .lede {
   font-size: clamp(17px, 1.5vw, 20px);
   line-height: 1.6;
   color: var(--muted);
   max-width: 56ch;
 }
+.section.dark .lede { color: var(--dark-muted); }
 
-/* ===== Buttons ===== */
+/* ====================================================================
+   BUTTONS
+   ==================================================================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -133,56 +210,62 @@ section { position: relative; }
   will-change: transform;
 }
 .btn-primary {
-  background: var(--emerald);
+  background: var(--accent);
   color: #fff;
-  box-shadow: 0 1px 0 rgba(0,0,0,.04), 0 6px 18px -10px rgba(5,150,105,.45);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 6px 18px -10px rgba(5,150,105,0.5);
 }
 .btn-primary:hover {
-  background: linear-gradient(180deg,#059669 0%,#047857 100%);
+  background: var(--accent-dk);
   transform: translateY(-1px);
 }
 .btn-primary .arrow { transition: transform 0.3s ease; }
 .btn-primary:hover .arrow { transform: translateX(4px); }
-.btn-link {
+
+.btn-ghost {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 16px 4px;
   font-weight: 500;
   font-size: 15px;
-  color: var(--ink);
+  color: #FCFBF7;
   position: relative;
 }
-.btn-link::after {
+.btn-ghost::after {
   content: "";
   position: absolute;
   left: 4px; right: 4px; bottom: 12px;
   height: 1px;
   background: currentColor;
-  opacity: 0.4;
-  transition: opacity 0.3s ease, background 0.3s ease;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
-.btn-link:hover::after { opacity: 1; background: var(--violet); }
+.btn-ghost:hover::after { opacity: 1; }
 
-/* ===== Nav ===== */
+/* ====================================================================
+   NAV (transparent → solide au scroll)
+   ==================================================================== */
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  transition: backdrop-filter 0.3s ease, background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, backdrop-filter 0.3s ease;
   border-bottom: 1px solid transparent;
   color: #FCFBF7;
 }
 .nav.is-scrolled {
-  background: rgba(250,250,248,0.86);
+  background: rgba(247,244,238,0.88);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom-color: var(--line);
   color: var(--ink);
 }
-.nav .brand { color: inherit; text-shadow: 0 1px 16px rgba(20, 12, 0, 0.4); transition: text-shadow 0.3s ease; }
+.nav .brand {
+  color: inherit;
+  text-shadow: 0 1px 16px rgba(20,12,0,0.55);
+  transition: text-shadow 0.3s ease;
+}
 .nav.is-scrolled .brand { text-shadow: none; }
-.nav-links a { color: inherit !important; }
 .nav-inner {
   display: flex;
   align-items: center;
@@ -201,219 +284,326 @@ section { position: relative; }
 .brand .dot {
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--emerald);
+  background: var(--accent);
   display: inline-block;
   margin-left: 2px;
   transform: translateY(-2px);
 }
+.nav-right { display: flex; align-items: center; gap: 28px; }
 .nav-links {
   display: none;
-  gap: 36px;
+  gap: 30px;
   align-items: center;
 }
 .nav-links a {
   font-size: 14px;
-  color: var(--ink);
+  color: inherit;
   position: relative;
   transition: color 0.3s ease;
+  text-shadow: 0 1px 12px rgba(20,12,0,0.4);
 }
+.nav.is-scrolled .nav-links a { text-shadow: none; }
 .nav-links a::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -6px;
   height: 1px;
-  background: var(--violet);
+  background: var(--accent);
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.3s ease;
 }
-.nav-links a:hover { color: var(--violet); }
 .nav-links a:hover::after { transform: scaleX(1); }
-@media (min-width: 1024px) { .nav-links { display: inline-flex; } }
+.nav-cta {
+  display: none;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 13.5px;
+  padding: 10px 18px;
+  border-radius: var(--r-sm);
+  background: var(--accent);
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
+  will-change: transform;
+}
+.nav-cta:hover { background: var(--accent-dk); transform: translateY(-1px); }
+@media (min-width: 1024px) {
+  .nav-links { display: inline-flex; }
+  .nav-cta { display: inline-flex; }
+}
 
-/* ===================================================
-   HERO (classique)
-   =================================================== */
+/* ====================================================================
+   SECTION 1 · HERO SCROLL-DRIVEN VIDEO
+   ==================================================================== */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 620px;
-  overflow: hidden;
-  background: linear-gradient(180deg, #4A5468 0%, #C8A371 55%, #F5DDB3 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 820vh;          /* plus c'est haut, plus le scroll est lent et fluide */
+  background: #0A0A0A;
 }
-
-/* Fond — ciel */
-.hero-sky {
+.hero-stop {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+.hero-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #0A0A0A;
+}
+.hero-video {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  overflow: hidden;
-}
-.hero-sky img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  display: block;
-  opacity: 0;
+  z-index: 1;
+  background: #0A0A0A;
+  pointer-events: none;
+  transform: scale(1.06) translate3d(var(--par-x, 0px), var(--par-y, 0px), 0);
+  transition: transform 0.5s cubic-bezier(.2,.7,.2,1);
+}
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10,10,10,0.45) 0%,
+      rgba(10,10,10,0.10) 28%,
+      rgba(10,10,10,0.10) 60%,
+      rgba(10,10,10,0.55) 100%
+    );
+  pointer-events: none;
+  transition: background 0.4s ease;
+}
+.hero-sticky.is-final .hero-veil {
+  background:
+    radial-gradient(125% 95% at 50% 52%, rgba(8,6,3,0) 30%, rgba(8,6,3,0.45) 100%),
+    linear-gradient(
+      180deg,
+      rgba(8,6,3,0.55) 0%,
+      rgba(8,6,3,0.28) 38%,
+      rgba(8,6,3,0.62) 100%
+    );
+}
+.hero-intro {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  z-index: 3;
+  opacity: var(--intro-opacity, 0);
+  transform: translateY(calc((1 - var(--intro-opacity, 0)) * -10px));
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.hero-intro p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: #F4E6CC;
+  max-width: 22ch;
+  text-wrap: balance;
+  margin: 0 auto;
+  text-shadow:
+    0 2px 28px rgba(20,12,0,0.7),
+    0 6px 50px rgba(20,12,0,0.5);
+}
+.hero-intro p.hero-intro-sub {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.88);
+  max-width: 44ch;
+  margin: 26px auto 0;
+  text-shadow: 0 1px 16px rgba(20,12,0,0.7);
 }
 
-/* Contenu centré */
 .hero-content {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0 24px;
-  transform: translateY(-4vh);
+  max-width: 980px;
+  margin: 0 auto;
+  z-index: 4;
+  opacity: var(--text-opacity, 0);
+  transform: translateY(calc((1 - var(--text-opacity, 0)) * 16px));
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
-.hero-agency {
+.hero-content.is-revealed { pointer-events: auto; }
+.hero-label {
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.42em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #FAFAF8;
-  opacity: 0;
-  margin-bottom: 28px;
-  text-shadow: 0 1px 12px rgba(20, 14, 4, 0.55);
+  color: #F8DEB5;
+  margin-bottom: 32px;
+  text-shadow: 0 1px 14px rgba(20,12,0,0.65);
 }
 .hero-h1 {
   font-family: var(--serif);
-  font-weight: 300;
-  font-size: clamp(44px, 8.8vw, 104px);
+  font-weight: 400;
+  font-size: clamp(44px, 7vw, 96px);
   line-height: 1.0;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
   color: #FCFBF7;
-  text-align: center;
   text-wrap: balance;
-  margin: 0;
-  opacity: 0;
   text-shadow:
-    0 2px 30px rgba(20, 12, 0, 0.45),
-    0 6px 60px rgba(20, 12, 0, 0.35);
+    0 2px 30px rgba(20,12,0,0.55),
+    0 6px 60px rgba(20,12,0,0.45);
 }
-.hero-h1 em {
+.hero-h1 .line { display: block; }
+.hero-h1 .line-2 {
   font-style: italic;
   font-weight: 300;
   color: #F8DEB5;
 }
 .hero-sub {
   font-family: var(--sans);
-  font-size: clamp(16px, 1.7vw, 20px);
-  color: #FAF3E2;
-  opacity: 0;
-  margin-top: 22px;
-  max-width: 48ch;
+  font-size: clamp(17px, 1.7vw, 20px);
+  color: rgba(255,255,255,0.85);
+  margin-top: 28px;
+  max-width: 52ch;
   line-height: 1.55;
-  text-shadow: 0 1px 18px rgba(20, 12, 0, 0.55);
+  text-shadow: 0 1px 18px rgba(20,12,0,0.65);
 }
-.hero-scroll-hint {
-  margin-top: 48px;
-  display: inline-flex;
+.hero-ctas {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.hero-hint {
+  position: absolute;
+  bottom: 36px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  opacity: 0;
+  gap: 12px;
   font-family: var(--mono);
   font-size: 10px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #FAF3E2;
-  text-decoration: none;
-  transition: opacity 0.3s;
-  text-shadow: 0 1px 12px rgba(20, 12, 0, 0.55);
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 1px 12px rgba(20,12,0,0.65);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
-.hero-scroll-hint:hover { opacity: .75 !important; }
-.scroll-bar {
+.hero-sticky.is-start .hero-hint { opacity: 1; }
+.hint-bar {
   width: 1px;
-  height: 32px;
-  background: rgba(250,243,226,.35);
+  height: 36px;
+  background: rgba(255,255,255,0.3);
   position: relative;
   overflow: hidden;
 }
-.scroll-bar::after {
+.hint-bar::after {
   content: "";
   position: absolute; inset: 0;
   background: #F8DEB5;
   transform: translateY(-100%);
-  animation: barDrop 2.2s ease-in-out infinite;
+  animation: hintPulse 2.4s ease-in-out infinite;
 }
-@keyframes barDrop {
+@keyframes hintPulse {
   0%   { transform: translateY(-100%); }
-  50%  { transform: translateY(0);     }
-  100% { transform: translateY(100%);  }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(100%); }
 }
-
-/* === Animation d'arrivée (one-shot, pas de boucle continue) === */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@keyframes slideUpFade {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0);    }
-}
-
-body.loaded .hero-sky img       { animation: fadeIn 1.0s ease-out 0s both; }
-body.loaded .hero-agency        { animation: fadeIn 0.7s ease-out 0.5s both; }
-body.loaded .hero-h1            { animation: slideUpFade 0.9s cubic-bezier(.2,.7,.2,1) 0.75s both; }
-body.loaded .hero-sub           { animation: fadeIn 0.7s ease-out 1.2s both; }
-body.loaded .hero-scroll-hint   { animation: fadeIn 0.7s ease-out 1.55s both; }
 
 @media (max-width: 767px) {
-  .hero-content { transform: translateY(-8vh); }
+  .hero-ctas { flex-direction: column; gap: 16px; }
+  .hero { height: 560vh; }
 }
 
-/* ===== Trust band ===== */
-.trust {
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  overflow: hidden;
-  padding: 22px 0;
-  background: var(--bg-alt);
+@media (prefers-reduced-motion: reduce) {
+  .hero { height: 100vh; }
+  .hero-sticky { position: relative; }
+  .hero-content { opacity: 1 !important; transform: none !important; }
+  .hero-video { display: none; }
+  .hero-sticky { background:
+    linear-gradient(180deg, #2a2018 0%, #1a1410 100%); }
 }
-.trust-track {
+
+.hero-words {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.hero-word {
+  position: absolute;
+  inset: 0;
+  margin: 0;
   display: flex;
-  gap: 64px;
   align-items: center;
-  white-space: nowrap;
-  animation: scrollX 40s linear infinite;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  padding: 0 28px;
+  opacity: 0;
+  will-change: opacity, transform;
 }
-.trust-track span { display: inline-flex; align-items: center; gap: 64px; }
-.trust-track .sep { width: 4px; height: 4px; background: currentColor; border-radius: 50%; opacity: 0.5; }
-@keyframes scrollX {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.hero-word span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(28px, 4.4vw, 58px);
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #F6EAD2;
+  max-width: 18ch;
+  text-wrap: balance;
+  text-shadow:
+    0 2px 30px rgba(12,7,0,0.88),
+    0 8px 64px rgba(12,7,0,0.62);
 }
+.hero-word.is-cold span { color: rgba(238,232,222,0.82); }
 
-/* ===== Sections ===== */
+/* ====================================================================
+   SECTIONS (génériques)
+   ==================================================================== */
 .section {
-  padding: 120px 0;
+  padding: 140px 0;
   border-top: 1px solid var(--line);
 }
 .section.dark {
-  background: var(--dark-bg);
+  background: var(--concrete);
   color: var(--dark-fg);
   border-top: none;
 }
-.section.dark .lede { color: var(--dark-muted); }
 .section.alt { background: var(--bg-alt); }
 
 .section-head {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 80px;
 }
 @media (min-width: 1024px) {
   .section-head {
@@ -423,58 +613,219 @@ body.loaded .hero-scroll-hint   { animation: fadeIn 0.7s ease-out 1.55s both; }
   }
 }
 
-/* ===== Apport grid 2×3 ===== */
-.grid-6 {
+/* ====================================================================
+   QUI SOMMES-NOUS (1re section · claire)
+   ==================================================================== */
+.qui-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  gap: 56px;
+  align-items: center;
 }
-@media (min-width: 640px)  { .grid-6 { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .grid-6 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) {
+  .qui-grid { grid-template-columns: 1.1fr 0.9fr; gap: 88px; }
+}
+.qui-lead {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(26px, 2.6vw, 34px);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  margin-bottom: 28px;
+  text-wrap: balance;
+}
+.qui-lead em { font-style: italic; font-weight: 300; color: var(--accent); }
+.qui-copy p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  max-width: 56ch;
+}
+.qui-copy p:last-child { margin-bottom: 0; }
+.qui-copy strong { color: var(--ink); font-weight: 600; }
+.qui-name {
+  margin-top: 36px;
+  border-left: 2px solid var(--accent);
+  padding-left: 28px;
+}
+.qui-name-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.qui-name p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+.qui-visual {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 40px 80px -40px rgba(27,24,21,0.35);
+  transform: rotate(-1.2deg);
+}
+.qui-visual img { width: 100%; height: 100%; object-fit: cover; }
 
-.feat {
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 44px 36px;
+/* ====================================================================
+   LE CONSTAT
+   ==================================================================== */
+.constat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .constat-grid {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 96px;
+  }
+}
+.constat-visual {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 70px -40px rgba(27,24,21,0.25);
+  aspect-ratio: 4 / 3;
+  background: var(--bg-alt);
+}
+.constat-visual img { width: 100%; height: 100%; object-fit: cover; }
+.constat-title {
+  font-family: var(--serif);
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  text-wrap: balance;
+}
+.constat-title em { font-style: italic; font-weight: 300; color: var(--accent); }
+.constat-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(20px, 1.8vw, 24px);
+  color: var(--muted);
+  margin-top: 18px;
+  font-weight: 300;
+}
+.constat-points {
+  margin-top: 56px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  transition: background 0.3s ease;
-  position: relative;
+  gap: 36px;
 }
-.feat:hover { background: #fff; }
-.feat-icon { width: 36px; height: 36px; color: var(--ink); }
-.feat:hover .feat-icon { color: var(--emerald); }
-.feat-icon svg { width: 100%; height: 100%; }
-.feat h3 {
+.constat-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.constat-point:last-child { border-bottom: none; padding-bottom: 0; }
+.constat-num {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-top: 3px;
+}
+.constat-point h3 {
   font-family: var(--serif);
   font-size: 22px;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.015em;
+  margin-bottom: 10px;
 }
-.feat p { color: var(--muted); font-size: 15.5px; line-height: 1.6; }
-.feat-tag {
-  position: absolute; top: 20px; right: 20px;
-  font-family: var(--mono); font-size: 11px;
-  color: var(--muted); letter-spacing: 0.06em;
-}
-.feat.highlight { background: var(--emerald); color: #fff; }
-.feat.highlight .feat-icon { color: rgba(255,255,255,0.8); }
-.feat.highlight h3 { color: #fff; }
-.feat.highlight p { color: rgba(255,255,255,0.78); }
-.feat.highlight .feat-tag { color: rgba(255,255,255,0.55); }
-.feat.highlight:hover { background: var(--emerald-dk); }
+.constat-point p { color: var(--muted); font-size: 16px; line-height: 1.65; }
 
-/* ===== Audience cards ===== */
+/* ====================================================================
+   L'APPROCHE (béton, blueprints background)
+   ==================================================================== */
+.approche { position: relative; overflow: hidden; }
+.approche-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('blueprints.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  opacity: 0.12;
+  z-index: 0;
+}
+.approche::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(28,25,24,0.80) 0%, rgba(20,18,17,0.92) 100%);
+  z-index: 1;
+}
+.approche > .container { position: relative; z-index: 2; }
+.approche-intro { max-width: 64ch; margin-bottom: 100px; }
+.approche-intro p {
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.65;
+  color: var(--dark-muted);
+  margin-top: 32px;
+}
+.approche-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+@media (min-width: 1024px) {
+  .approche-steps { grid-template-columns: repeat(3, 1fr); gap: 48px; }
+}
+.approche-step { position: relative; padding-top: 80px; }
+.approche-step-num {
+  position: absolute;
+  top: -20px; left: -8px;
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: clamp(110px, 11vw, 160px);
+  line-height: 1;
+  color: rgba(255,255,255,0.05);
+  letter-spacing: -0.04em;
+  user-select: none;
+  pointer-events: none;
+}
+.approche-step-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-lt);
+  margin-bottom: 18px;
+}
+.approche-step h3 {
+  font-family: var(--serif);
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.approche-step p {
+  color: var(--dark-muted);
+  font-size: 16.5px;
+  line-height: 1.65;
+  max-width: 38ch;
+}
+
+/* ====================================================================
+   POUR QUI
+   ==================================================================== */
 .audience {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 24px;
 }
 @media (min-width: 1024px) { .audience { grid-template-columns: repeat(3, 1fr); } }
-
 .aud-card {
   background: #fff;
   border: 1px solid var(--line);
@@ -483,26 +834,27 @@ body.loaded .hero-scroll-hint   { animation: fadeIn 0.7s ease-out 1.55s both; }
   display: flex;
   flex-direction: column;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
 }
 .aud-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 36px 80px -50px rgba(17,17,17,.25);
+  box-shadow: 0 36px 80px -50px rgba(27,24,21,0.3);
 }
-.aud-band { height: 5px; background: var(--emerald); }
-.aud-card.violet .aud-band   { background: var(--violet); }
-.aud-card.charcoal .aud-band { background: #2a2a2a; }
+.aud-band { height: 4px; background: var(--accent); }
+.aud-card.blueprint .aud-band { background: var(--blueprint); }
+.aud-card.charcoal .aud-band { background: #4A443C; }
 .aud-photo {
-  aspect-ratio: 4/3;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  position: relative;
+  background: var(--bg-alt);
 }
 .aud-photo img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block;
-  transition: transform 0.7s ease;
+  transition: transform 0.8s ease;
 }
-.aud-card:hover .aud-photo img { transform: scale(1.05); }
+.aud-card:hover .aud-photo img { transform: scale(1.04); }
 .aud-body {
   padding: 36px;
   display: flex;
@@ -515,696 +867,729 @@ body.loaded .hero-scroll-hint   { animation: fadeIn 0.7s ease-out 1.55s both; }
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--emerald);
+  color: var(--accent);
 }
-.aud-card.violet  .aud-label  { color: var(--violet); }
-.aud-card.charcoal .aud-label { color: #2a2a2a; }
+.aud-card.blueprint .aud-label { color: var(--blueprint); }
+.aud-card.charcoal .aud-label { color: #4A443C; }
 .aud-body h3 {
   font-family: var(--serif);
   font-size: 28px;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  font-weight: 400;
 }
 .aud-body p { color: var(--muted); font-size: 16px; line-height: 1.65; }
-.aud-foot {
+.aud-link {
   margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-  text-transform: uppercase;
-}
-
-/* ===== Évolution (scroll-driven) ===== */
-.evolution { background: var(--bg); }
-.evo-wrap {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  position: relative;
-}
-@media (min-width: 1024px) {
-  .evo-wrap { grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
-}
-.evo-sticky {
-  position: sticky;
-  top: 100px;
-  height: min(78vh, 720px);
-  border-radius: var(--r-lg);
-  border: 1px solid var(--line);
-  background: #fff;
-  overflow: hidden;
-}
-.evo-frame {
-  position: absolute; inset: 0;
-  opacity: 0;
-  transition: opacity 0.8s cubic-bezier(.4,0,.2,1);
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-.evo-frame.active { opacity: 1; }
-.evo-canvas {
-  position: relative;
-  overflow: hidden;
-}
-.evo-canvas img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.evo-canvas::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(250,250,248,0) 55%, rgba(250,250,248,0.85) 100%);
-  pointer-events: none;
-}
-.evo-meta {
-  position: relative; z-index: 2;
-  padding: 24px 28px;
-  background: #fff;
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
+  padding-top: 10px;
+  display: inline-flex;
   align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.evo-meta-num {
-  font-family: var(--mono); font-size: 12px;
-  letter-spacing: 0.08em; color: var(--emerald);
-}
-.evo-meta-title {
-  font-family: var(--serif); font-size: 24px;
-  line-height: 1.1; letter-spacing: -0.015em;
-}
-.evo-meta-side {
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.08em; color: var(--muted);
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: var(--accent);
+  transition: gap 0.3s ease;
 }
-.evo-chapters {
-  display: flex;
-  flex-direction: column;
-  gap: 28vh;
-  padding: 16vh 0 30vh;
-}
-.evo-chapter {
-  display: flex; flex-direction: column; gap: 18px;
-  max-width: 46ch;
-  transition: opacity 0.5s ease;
-  opacity: 0.35;
-}
-.evo-chapter.active { opacity: 1; }
-.evo-chapter-tag {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-family: var(--mono); font-size: 12px;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--muted);
-}
-.evo-chapter.active .evo-chapter-tag { color: var(--emerald); }
-.evo-chapter-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-.evo-chapter h3 {
-  font-family: var(--serif);
-  font-size: clamp(30px, 3.4vw, 44px);
-  line-height: 1.1; letter-spacing: -0.02em; font-weight: 400;
-}
-.evo-chapter h3 em { font-style: italic; font-weight: 300; }
-.evo-chapter p { color: var(--muted); font-size: 16.5px; line-height: 1.65; }
-.evo-chapter .meta {
-  font-family: var(--mono); font-size: 12px;
-  color: var(--muted); letter-spacing: 0.06em;
-  display: flex; gap: 18px; flex-wrap: wrap;
-}
-.evo-chapter .meta span::before { content: "→ "; color: var(--ink); opacity: 0.5; }
+.aud-link:hover { gap: 14px; }
+.aud-card.blueprint .aud-link { color: var(--blueprint); }
 
-@media (max-width: 1023px) {
-  .evo-sticky { position: relative; top: 0; height: 300px; }
-  .evo-chapters { gap: 64px; padding: 48px 0; }
-  .evo-chapter { opacity: 1; }
-}
-
-/* ===== Mockup section ===== */
+/* ====================================================================
+   MAQUETTE GRATUITE (alt)
+   ==================================================================== */
 .mockup-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 64px;
   align-items: center;
 }
-@media (min-width: 1024px) { .mockup-grid { grid-template-columns: 1fr 1fr; gap: 80px; } }
-
-.mockup-intro { margin-bottom: 40px; }
-.mockup-points {
-  display: flex; flex-direction: column; gap: 28px;
-  margin-top: 40px;
+@media (min-width: 1024px) {
+  .mockup-grid { grid-template-columns: 1.05fr 1fr; gap: 96px; }
+}
+.mockup-intro h2 { margin-top: 28px; }
+.mockup-intro .lede { margin-top: 28px; }
+.mockup-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
   padding-top: 40px;
   border-top: 1px solid var(--line);
 }
-.mockup-point { display: flex; gap: 20px; align-items: flex-start; }
-.mockup-point-num {
-  font-family: var(--mono); font-size: 13px;
-  letter-spacing: 0.08em; color: var(--emerald);
-  flex-shrink: 0; padding-top: 2px;
+.mockup-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: start;
 }
-.mockup-point strong {
-  font-weight: 500; font-size: 16px;
-  display: block; margin-bottom: 5px;
+.mockup-step-num {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-top: 3px;
+}
+.mockup-step strong {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
   font-family: var(--sans);
 }
-.mockup-point p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.mockup-step p { color: var(--muted); font-size: 15px; line-height: 1.6; }
 .mockup-cta {
   margin-top: 48px;
-  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .mockup-note {
-  font-family: var(--mono); font-size: 12px;
-  letter-spacing: 0.06em; color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 .mockup-visual {
   border-radius: var(--r-lg);
   overflow: hidden;
-  box-shadow: 0 40px 80px -30px rgba(17,17,17,.18);
-  position: relative;
-  aspect-ratio: 16 / 10;
-  background: #1a1410;
+  aspect-ratio: 4 / 5;
+  background: #fff;
+  box-shadow: 0 40px 80px -30px rgba(27,24,21,0.2);
 }
-.mockup-visual img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: 38% 32%;
-  transform: scale(1.18);
-  transform-origin: center;
-}
-.mockup-badge {
-  position: absolute; bottom: 24px; left: 24px;
-  background: rgba(5,150,105,0.95);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: var(--r-sm);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+.mockup-visual img { width: 100%; height: 100%; object-fit: cover; }
 
-/* ===== About — dark ===== */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  align-items: start;
+/* ====================================================================
+   CONTACT (clôture condensée)
+   ==================================================================== */
+.contact { padding: 160px 0; text-align: center; }
+.contact-image {
+  width: min(420px, 80%);
+  margin: 0 auto 56px;
+  aspect-ratio: 5 / 3;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 60px -30px rgba(27,24,21,0.22);
 }
-@media (min-width: 1024px) { .about-grid { grid-template-columns: 1fr 1.4fr; gap: 80px; } }
-.about-side {
-  display: flex; flex-direction: column; gap: 16px;
-}
-.about-side .badge {
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: var(--r-sm);
-  padding: 20px;
-  display: flex; flex-direction: column; gap: 6px;
-}
-.about-side .badge .k {
-  font-family: var(--mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: 0.08em; color: var(--dark-muted);
-}
-.about-side .badge .v {
-  font-family: var(--serif); font-size: 22px; letter-spacing: -0.015em;
-}
-.about-copy p {
-  font-size: 18px; line-height: 1.75;
-  color: var(--dark-muted); max-width: 60ch;
-}
-.about-copy p + p { margin-top: 24px; }
-.about-copy p strong { color: var(--dark-fg); font-weight: 500; }
-
-/* ===== Contact ===== */
-.contact {
-  text-align: center;
-  padding: 140px 0;
-}
+.contact-image img { width: 100%; height: 100%; object-fit: cover; }
 .contact h2 {
   font-family: var(--serif);
-  font-size: clamp(44px, 7vw, 96px);
-  line-height: 1; letter-spacing: -0.03em;
-  font-weight: 400; text-wrap: balance;
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  text-wrap: balance;
 }
-.contact h2 em { font-style: italic; font-weight: 300; color: var(--emerald); }
-.contact .lede { margin: 28px auto 0; text-align: center; }
-.contact .btn  { margin-top: 48px; padding: 22px 36px; font-size: 16px; }
-.contact-foot {
+.contact h2 em { font-style: italic; font-weight: 300; color: var(--accent); }
+.contact .lede { margin: 32px auto 0; text-align: center; }
+.contact .btn { margin-top: 52px; padding: 22px 36px; font-size: 16px; }
+.contact-coords {
   margin-top: 56px;
-  display: flex; justify-content: center;
-  gap: 8px 40px; flex-wrap: wrap;
-  font-family: var(--mono); font-size: 13px; color: var(--muted);
+  display: flex;
+  justify-content: center;
+  gap: 8px 40px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
 }
-.contact-foot a {
+.contact-coords a {
   color: var(--ink);
   border-bottom: 1px solid var(--line);
   padding-bottom: 2px;
   transition: border-color 0.3s ease, color 0.3s ease;
 }
-.contact-foot a:hover { border-color: var(--emerald); color: var(--emerald); }
+.contact-coords a:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ===== Footer ===== */
+/* ====================================================================
+   FOOTER
+   ==================================================================== */
 footer {
-  background: #111;
-  color: #d4d4d4;
-  padding: 56px 0 32px;
+  background: var(--concrete-2);
+  color: #d4cdc4;
+  padding: 64px 0 32px;
   font-size: 14px;
 }
 .foot-grid {
-  display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: start;
 }
-@media (min-width: 768px) { .foot-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; } }
+@media (min-width: 768px) {
+  .foot-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; }
+}
 .foot-brand {
-  font-family: var(--serif); font-size: 28px;
-  color: #fff; letter-spacing: -0.02em;
+  font-family: var(--serif);
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: -0.02em;
 }
-.foot-brand .dot { width: 8px; height: 8px; background: var(--emerald); display: inline-block; border-radius: 50%; margin-left: 2px; transform: translateY(-3px); }
-.foot-tag { margin-top: 12px; color: #777; font-size: 14px; max-width: 32ch; line-height: 1.5; }
+.foot-brand .dot {
+  width: 8px; height: 8px;
+  background: var(--accent);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 2px;
+  transform: translateY(-3px);
+}
+.foot-tag { margin-top: 14px; color: #8b8278; font-size: 14px; max-width: 34ch; line-height: 1.55; }
 .foot-col h4 {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
-  text-transform: uppercase; color: #777; margin-bottom: 14px; font-weight: 500;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b8278;
+  margin-bottom: 16px;
+  font-weight: 500;
 }
 .foot-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-.foot-col a { color: #d4d4d4; transition: color 0.3s ease; }
+.foot-col a { color: #d4cdc4; transition: color 0.3s ease; }
 .foot-col a:hover { color: #fff; }
 .foot-bottom {
-  margin-top: 56px; padding-top: 24px;
-  border-top: 1px solid #222;
-  display: flex; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px;
-  font-family: var(--mono); font-size: 11px; color: #777;
-  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #332e29;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #8b8278;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* ===== Reveal ===== */
+/* ====================================================================
+   REVEAL AU SCROLL
+   ==================================================================== */
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.8s cubic-bezier(.2,.7,.2,1);
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
   will-change: opacity, transform;
 }
-.reveal.in { opacity: 1; transform: translateY(0); }
-.reveal.d1 { transition-delay: 0.08s; }
-.reveal.d2 { transition-delay: 0.16s; }
-.reveal.d3 { transition-delay: 0.24s; }
-.reveal.d4 { transition-delay: 0.32s; }
-.reveal.d5 { transition-delay: 0.40s; }
-.reveal.d6 { transition-delay: 0.48s; }
+.reveal.in { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: 0.1s; }
+.reveal.d2 { transition-delay: 0.2s; }
+.reveal.d3 { transition-delay: 0.3s; }
+.reveal.d4 { transition-delay: 0.4s; }
 
-/* ===== Selection ===== */
-::selection { background: var(--emerald); color: #fff; }
+/* ====================================================================
+   INTERACTIONS SOURIS · halo, tilt, magnétique
+   ==================================================================== */
+.glow-host { position: relative; }
+.glow {
+  position: absolute;
+  width: 520px; height: 520px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(5,150,105,0.24) 0%, rgba(5,150,105,0) 62%);
+  transform: translate3d(-50%, -50%, 0);
+  left: var(--gx, 50%); top: var(--gy, 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  mix-blend-mode: screen;
+}
+.glow-host:hover .glow { opacity: 1; }
+.approche .container, .approche .approche-intro, .approche .approche-steps { position: relative; z-index: 2; }
 
-/* ===== Reduced motion ===== */
+.tilt { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--ty, 0)); transition: transform 0.25s cubic-bezier(.2,.7,.2,1); }
+.mag { will-change: transform; transition: transform 0.25s cubic-bezier(.2,.7,.2,1); }
+
+::selection { background: var(--accent); color: #fff; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+  .hero-content { transform: none !important; }
+  .hero-video { transform: none !important; }
+  .glow { display: none; }
 }
+
+/* ====================================================================
+   MODALE · formulaire multi-étapes « Maquette gratuite »
+   ==================================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(20,16,12,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.modal-backdrop.is-open { opacity: 1; pointer-events: auto; }
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  background: var(--bg);
+  border-radius: var(--r-lg);
+  box-shadow: 0 50px 120px -30px rgba(20,16,12,0.6);
+  padding: 44px 40px 40px;
+  transform: translateY(24px) scale(0.98);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(.2,.8,.2,1), opacity 0.4s ease;
+  overflow: hidden;
+}
+.modal-backdrop.is-open .modal { transform: none; opacity: 1; }
+@media (max-width: 600px) { .modal { padding: 36px 24px 28px; } }
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.modal-close:hover { background: var(--bg-alt); color: var(--ink); }
+.modal-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.modal h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(24px, 3.4vw, 30px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.modal h2 em { font-style: italic; font-weight: 300; color: var(--accent); }
+.modal-progress {
+  display: flex;
+  gap: 6px;
+  margin: 22px 0 26px;
+}
+.modal-progress span {
+  flex: 1;
+  height: 4px;
+  border-radius: 99px;
+  background: var(--line);
+  transition: background 0.4s ease;
+}
+.modal-progress span.on { background: var(--accent); }
+.modal-steps { position: relative; }
+.modal-step { display: none; animation: stepIn 0.45s cubic-bezier(.2,.8,.2,1); }
+.modal-step.active { display: block; }
+@keyframes stepIn {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: none; }
+}
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.field-input,
+.field-select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 15px 16px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.field-input:focus,
+.field-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(5,150,105,0.12);
+}
+.field-hint { font-size: 13px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+.field-error {
+  font-size: 13px;
+  color: var(--accent-dk);
+  margin-top: 10px;
+  min-height: 0;
+  display: none;
+}
+.field-error.show { display: block; }
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+}
+.modal-back {
+  font-size: 14px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.25s ease;
+}
+.modal-back:hover { color: var(--ink); }
+.modal-back[hidden] { visibility: hidden; }
+.modal-next {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 14px 26px;
+  border-radius: var(--r-sm);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.modal-next:hover { background: var(--accent-dk); transform: translateY(-1px); }
+.modal-next:disabled { opacity: 0.6; cursor: progress; }
+.modal-success { text-align: center; padding: 12px 0 6px; }
+.modal-success .check {
+  width: 64px; height: 64px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: rgba(5,150,105,0.12);
+  color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-success h2 { margin-bottom: 12px; }
+.modal-success p { color: var(--muted); font-size: 16px; line-height: 1.6; max-width: 38ch; margin: 0 auto; }
 </style>
 </head>
 <body>
 
-<!-- =================== NAV =================== -->
+<!-- ====================================================================
+     NAV
+     ==================================================================== -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#top" class="brand" aria-label="Signal — accueil">
-      Signal<span class="dot" aria-hidden="true"></span>
+    <a href="#top" class="brand" aria-label="À Pleine Ouverture · accueil">
+      À Pleine Ouverture<span class="dot" aria-hidden="true"></span>
     </a>
-    <nav class="nav-links" aria-label="Navigation principale">
-      <a href="#evolution">Notre approche</a>
-      <a href="#apport">Ce qu'on apporte</a>
-      <a href="#pour-qui">Pour qui</a>
-      <a href="#maquette">Maquette gratuite</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#qui-sommes-nous">Qui sommes-nous</a>
+        <a href="#constat">Le constat</a>
+        <a href="#approche">L'approche</a>
+        <a href="#pour-qui">Pour qui</a>
+      </nav>
+      <button type="button" class="nav-cta" data-open-modal>Demander ma maquette</button>
+    </div>
   </div>
 </header>
 
-<!-- =================== HERO =================== -->
+<!-- ====================================================================
+     SECTION 1 · HERO SCROLL-DRIVEN VIDEO (un seul plan-séquence)
+     ==================================================================== -->
 <section class="hero" id="top" aria-label="Accueil">
-  <div class="hero-sky">
-    <img id="img-sky" alt="" aria-hidden="true">
+  <div class="hero-sticky" id="heroSticky">
+    <video class="hero-video"
+           id="heroVideo"
+           src="journey.mp4"
+           poster="hero-poster.jpg"
+           preload="auto"
+           muted
+           playsinline
+           disablepictureinpicture
+           aria-hidden="true"></video>
+
+    <div class="hero-veil" aria-hidden="true"></div>
+
+    <div class="hero-intro" id="heroIntro">
+      <div>
+        <p>Votre métier,<br>votre regard,<br>votre histoire.</p>
+        <p class="hero-intro-sub">Des sites internet qui rendent visible le savoir-faire des maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.</p>
+      </div>
+    </div>
+
+    <div class="hero-words" id="heroWords" aria-hidden="true">
+      <p class="hero-word" data-band="0"><span>Rendez visible votre savoir-faire.</span></p>
+      <p class="hero-word" data-band="1"><span>On vous rend unique.</span></p>
+    </div>
+
+    <div class="hero-content" id="heroContent">
+      <h1 class="hero-h1">
+        <span class="line">À Pleine Ouverture</span>
+      </h1>
+      <p class="hero-sub">
+        Des sites qui rendent visible votre savoir-faire et vous amènent des clients mieux qualifiés. Pour les maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.
+      </p>
+      <div class="hero-ctas">
+        <button type="button" class="btn btn-primary" data-open-modal>
+          Demander ma maquette gratuite
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <a class="btn-ghost" href="#approche">
+          Notre approche
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-hint" aria-hidden="true">
+      Faites défiler pour entrer
+      <span class="hint-bar"></span>
+    </div>
   </div>
-  <div class="hero-content">
-    <span class="hero-agency">Signal</span>
-    <h1 class="hero-h1">
-      Votre savoir-faire mérite<br>
-      d'être vu <em>à sa juste valeur.</em>
-    </h1>
-    <p class="hero-sub">
-      Votre métier a une âme. On la rend visible.
-    </p>
-    <a href="#evolution" class="hero-scroll-hint" aria-label="Découvrir">
-      Découvrir
-      <span class="scroll-bar" aria-hidden="true"></span>
-    </a>
-  </div>
+
 </section>
 
-<!-- =================== TRUST BAND =================== -->
-<div class="trust" aria-hidden="true">
-  <div class="trust-track">
-    <span>
-      Maîtres d'œuvre <em class="sep"></em>
-      Architectes d'intérieur <em class="sep"></em>
-      Cuisinistes <em class="sep"></em>
-      Ébénistes <em class="sep"></em>
-      Paysagistes concepteurs <em class="sep"></em>
-      Constructeurs bois <em class="sep"></em>
-      Rénovation haut de gamme <em class="sep"></em>
-    </span>
-    <span>
-      Maîtres d'œuvre <em class="sep"></em>
-      Architectes d'intérieur <em class="sep"></em>
-      Cuisinistes <em class="sep"></em>
-      Ébénistes <em class="sep"></em>
-      Paysagistes concepteurs <em class="sep"></em>
-      Constructeurs bois <em class="sep"></em>
-      Rénovation haut de gamme <em class="sep"></em>
-    </span>
-  </div>
-</div>
-
-<!-- =================== SECTION 01 — ÉVOLUTION =================== -->
-<section class="section evolution" id="evolution">
+<!-- ====================================================================
+     SECTION · QUI SOMMES-NOUS (1re section)
+     ==================================================================== -->
+<section class="section" id="qui-sommes-nous" aria-label="Qui sommes-nous">
   <div class="container">
     <div class="section-head">
       <div class="reveal">
-        <span class="section-label">01 — Notre approche</span>
+        <span class="section-label">01 · Qui sommes-nous</span>
       </div>
       <div class="reveal d1">
         <h2 class="h-section">
-          Quatre temps pour construire<br>
-          <em>quelque chose qui vous ressemble.</em>
+          On crée des sites pour ceux<br>
+          qui <em>construisent.</em>
         </h2>
       </div>
     </div>
 
-    <div class="evo-wrap">
-      <div class="evo-sticky" id="evoSticky" aria-hidden="true">
+    <div class="qui-grid">
+      <div class="qui-copy reveal">
+        <p class="qui-lead">
+          À Pleine Ouverture, on conçoit des sites internet pour les maîtres d'œuvre, les architectes d'intérieur et les artisans du bâtiment.
+        </p>
+        <p>
+          <strong>On ne fait pas qu'un beau site. On construit une véritable identité de marque autour de votre personnalité et de votre manière de travailler.</strong> Pour qu'avant même de décrocher leur téléphone, vos clients aient compris qui vous êtes, ce que vous valez et pourquoi c'est vous qu'il leur faut.
+        </p>
+        <p>
+          Tout part de là : votre histoire, votre style, votre exigence. On les met en lumière pour installer la confiance bien avant le premier rendez-vous.
+        </p>
 
-        <div class="evo-frame active" data-stage="0">
-          <div class="evo-canvas"><img id="evo-img-0" alt=""></div>
-          <div class="evo-meta">
-            <div>
-              <div class="evo-meta-num">// Temps 01</div>
-              <div class="evo-meta-title">L'écoute</div>
-            </div>
-            <div class="evo-meta-side">Entretiens · Café · Réalité</div>
-          </div>
+        <div class="qui-name">
+          <span class="qui-name-label">Le nom</span>
+          <p>« À pleine ouverture », c'est le réglage qui laisse entrer le maximum de lumière. C'est exactement ce qu'on fait pour votre activité : on la montre sous son meilleur jour.</p>
         </div>
-
-        <div class="evo-frame" data-stage="1">
-          <div class="evo-canvas"><img id="evo-img-1" alt=""></div>
-          <div class="evo-meta">
-            <div>
-              <div class="evo-meta-num">// Temps 02</div>
-              <div class="evo-meta-title">L'analyse</div>
-            </div>
-            <div class="evo-meta-side">Marché · Concurrence · Angle</div>
-          </div>
-        </div>
-
-        <div class="evo-frame" data-stage="2">
-          <div class="evo-canvas"><img id="evo-img-2" alt=""></div>
-          <div class="evo-meta">
-            <div>
-              <div class="evo-meta-num">// Temps 03</div>
-              <div class="evo-meta-title">La construction</div>
-            </div>
-            <div class="evo-meta-side">Design · Textes · Dev · SEO</div>
-          </div>
-        </div>
-
-        <div class="evo-frame" data-stage="3">
-          <div class="evo-canvas"><img id="evo-img-3" alt=""></div>
-          <div class="evo-meta">
-            <div>
-              <div class="evo-meta-num">// Temps 04</div>
-              <div class="evo-meta-title">La mise en ligne</div>
-            </div>
-            <div class="evo-meta-side">Lancement · Suivi · Résultats</div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="evo-chapters" id="evoChapters">
-
-        <article class="evo-chapter" data-stage="0">
-          <span class="evo-chapter-tag"><span class="dot"></span> 01 — L'écoute</span>
-          <h3>On commence par vous écouter, <em>pas par vous vendre.</em></h3>
-          <p>On rencontre des gens qui préfèrent parfois les réunions aux devis. C'est pour ça qu'on commence par une conversation. On veut comprendre comment vous travaillez, ce que vos clients aiment chez vous, et ce qui vous fait vous lever le matin. Ce n'est pas un brief — c'est une discussion honnête.</p>
-          <div class="meta">
-            <span>Entretiens</span>
-            <span>Questions ouvertes</span>
-            <span>Écoute active</span>
-          </div>
-        </article>
-
-        <article class="evo-chapter" data-stage="1">
-          <span class="evo-chapter-tag"><span class="dot"></span> 02 — L'analyse</span>
-          <h3>On cherche <em>ce qui vous appartient.</em></h3>
-          <p>On étudie votre marché, vos concurrents, les attentes de vos clients. Et on trace la frontière : voilà ce qui ne peut appartenir qu'à vous. Votre angle, votre histoire, votre espace unique dans la tête de vos prospects. C'est ça qui deviendra le cœur de votre site.</p>
-          <div class="meta">
-            <span>Analyse marché</span>
-            <span>Positionnement</span>
-            <span>Différenciation</span>
-          </div>
-        </article>
-
-        <article class="evo-chapter" data-stage="2">
-          <span class="evo-chapter-tag"><span class="dot"></span> 03 — La construction</span>
-          <h3>On bâtit autour <em>de votre réalité.</em></h3>
-          <p>Design sur mesure, textes écrits à partir de ce qu'on a appris sur vous, développement propre. Vous validez, vous commentez. On construit ensemble — et vous n'avez pas à rédiger quoi que ce soit. Chaque phrase, chaque image a une raison d'être là.</p>
-          <div class="meta">
-            <span>Design</span>
-            <span>Rédaction</span>
-            <span>Dev & SEO</span>
-          </div>
-        </article>
-
-        <article class="evo-chapter" data-stage="3">
-          <span class="evo-chapter-tag"><span class="dot"></span> 04 — La mise en ligne</span>
-          <h3>Le site est en ligne. <em>Le travail continue.</em></h3>
-          <p>On ne livre pas une boîte et on disparaît. On s'assure que le site vit, qu'il est bien indexé, qu'il vous apporte des contacts. Un site ne se mesure pas le premier jour — il se mesure sur ce qu'il déclenche dans le temps.</p>
-          <div class="meta">
-            <span>Lancement</span>
-            <span>Indexation</span>
-            <span>Suivi</span>
-          </div>
-        </article>
-
+      <div class="qui-visual reveal d1">
+        <img src="letter.jpg" alt="Note manuscrite « Clarté visuelle » posée sur un bureau en bois" loading="lazy" width="1600" height="2000">
       </div>
     </div>
   </div>
 </section>
 
-<!-- =================== SECTION 02 — CE QU'ON APPORTE =================== -->
-<section class="section" id="apport">
+<!-- ====================================================================
+     SECTION · LE CONSTAT
+     ==================================================================== -->
+<section class="section alt" id="constat" aria-label="Le constat">
   <div class="container">
     <div class="section-head">
       <div class="reveal">
-        <span class="section-label">02 — Ce qu'on apporte</span>
+        <span class="section-label">02 · Le constat</span>
+      </div>
+    </div>
+
+    <div class="constat-grid">
+      <div class="constat-visual reveal">
+        <img src="laptop.jpg" alt="Site internet d'entreprise affiché sur un ordinateur portable" loading="lazy" width="1600" height="1200">
+      </div>
+
+      <div>
+        <h2 class="constat-title reveal">
+          Un bon site, ce n'est pas une question de <em>design.</em>
+        </h2>
+        <p class="constat-sub reveal d1">C'est une question de message.</p>
+
+        <div class="constat-points">
+          <div class="constat-point reveal d1">
+            <span class="constat-num">01</span>
+            <div>
+              <h3>Sortir du discours commun</h3>
+              <p>Qualité, savoir-faire, devis gratuit : presque tous les sites d'un secteur disent la même chose. On trouve l'angle qui vous distingue vraiment, et on le met en avant.</p>
+            </div>
+          </div>
+
+          <div class="constat-point reveal d2">
+            <span class="constat-num">02</span>
+            <div>
+              <h3>Un site qui travaille pour vous</h3>
+              <p>Un beau site ne suffit pas. On en construit un qui transforme les visiteurs en appels et en projets concrets, avec une vraie raison de vous choisir.</p>
+            </div>
+          </div>
+
+          <div class="constat-point reveal d3">
+            <span class="constat-num">03</span>
+            <div>
+              <h3>On écrit tout à votre place</h3>
+              <p>Vous gérez vos chantiers, vos clients, vos équipes. Les textes, la structure, le référencement : on s'occupe de tout, vous validez.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECTION · L'APPROCHE (béton, blueprints background)
+     ==================================================================== -->
+<section class="section dark approche glow-host" id="approche" aria-label="L'approche">
+  <div class="approche-bg" aria-hidden="true"></div>
+  <span class="glow" aria-hidden="true"></span>
+
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="section-label">03 · L'approche</span>
       </div>
       <div class="reveal d1">
         <h2 class="h-section">
-          Ce que ça change, <em>concrètement.</em>
+          On commence par comprendre <em>votre métier.</em>
         </h2>
       </div>
     </div>
 
-    <div class="grid-6">
-      <article class="feat reveal">
-        <span class="feat-tag">/ 01</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="16" cy="16" r="2.5"/><circle cx="16" cy="16" r="8"/><circle cx="16" cy="16" r="13.5"/>
-          </svg>
-        </div>
-        <h3>Audit de votre positionnement</h3>
-        <p>On analyse vos forces, votre marché et vos concurrents avant de toucher au design. Le site découle d'une stratégie, pas l'inverse.</p>
+    <div class="approche-intro reveal">
+      <p>
+        Avant de dessiner quoi que ce soit, on passe du temps avec vous. On veut comprendre comment vous travaillez, ce qui fait votre différence, ce que vos clients apprécient chez vous. On identifie ce qui vous distingue vraiment, puis on construit un site autour de ça.
+      </p>
+    </div>
+
+    <div class="approche-steps">
+      <article class="approche-step reveal">
+        <span class="approche-step-num" aria-hidden="true">01</span>
+        <span class="approche-step-label">Étape 01</span>
+        <h3>Immersion</h3>
+        <p>On prend le temps de comprendre votre métier : comment vous travaillez, ce qui fait votre différence, ce que vos clients retiennent de vous. C'est la base de tout le reste.</p>
       </article>
 
-      <article class="feat reveal d1">
-        <span class="feat-tag">/ 02</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 8h16M8 14h16M8 20h10"/><path d="M22 17l6 6-3 3-6-6"/>
-          </svg>
-        </div>
-        <h3>Analyse concurrentielle</h3>
-        <p>On sait ce que vos concurrents montrent. On construit précisément ce qui vous distingue — et on le rend visible pour vos prospects.</p>
+      <article class="approche-step reveal d1">
+        <span class="approche-step-num" aria-hidden="true">02</span>
+        <span class="approche-step-label">Étape 02</span>
+        <h3>Positionnement</h3>
+        <p>On formule ce qui vous rend unique : le message, l'angle, l'histoire. Ce que votre site doit dire pour que les bons clients vous contactent.</p>
       </article>
 
-      <article class="feat reveal d2">
-        <span class="feat-tag">/ 03</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 8L21 8"/><path d="M5 14L27 14"/><path d="M5 20L19 20"/><path d="M5 26L24 26"/>
-            <path d="M22 4L28 10L19 19L13 19L13 13Z"/>
-          </svg>
-        </div>
-        <h3>Textes rédigés pour vous</h3>
-        <p>Zéro ligne à écrire de votre côté. On rédige l'intégralité du contenu à partir de nos échanges — avec vos mots, votre ton, votre histoire.</p>
-      </article>
-
-      <article class="feat reveal d3">
-        <span class="feat-tag">/ 04</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="4" width="10" height="10" rx="1"/><rect x="18" y="4" width="10" height="10" rx="1"/>
-            <rect x="4" y="18" width="10" height="10" rx="1"/><path d="M18 23h10M23 18v10"/>
-          </svg>
-        </div>
-        <h3>Un site ancré dans votre réalité</h3>
-        <p>Vos prospects ne cherchent pas un joli site. Ils cherchent quelqu'un de confiance. On fait cette jonction — visuellement et dans chaque phrase.</p>
-      </article>
-
-      <article class="feat reveal d4">
-        <span class="feat-tag">/ 05</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 26L11 18L16 22L22 12L28 18"/>
-            <circle cx="11" cy="18" r="1.4"/><circle cx="16" cy="22" r="1.4"/><circle cx="22" cy="12" r="1.4"/>
-            <path d="M4 30L28 30"/>
-          </svg>
-        </div>
-        <h3>Visibilité sur Google</h3>
-        <p>Structure technique optimisée, mots-clés sectoriels et locaux. Vos bons clients — ceux qui cherchent exactement ce que vous faites — vous trouvent.</p>
-      </article>
-
-      <article class="feat highlight reveal d5">
-        <span class="feat-tag">/ 06</span>
-        <div class="feat-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="6" width="24" height="20" rx="2"/><path d="M4 12L28 12"/>
-            <circle cx="7.5" cy="9" r="0.8" fill="currentColor"/>
-            <circle cx="10.5" cy="9" r="0.8" fill="currentColor"/>
-            <path d="M11 19l3 3 7-7"/>
-          </svg>
-        </div>
-        <h3>Maquette gratuite</h3>
-        <p>On vous montre à quoi ressemblera votre site avant que vous vous engagiez. Gratuitement, sans condition. Vous décidez après avoir vu.</p>
+      <article class="approche-step reveal d2">
+        <span class="approche-step-num" aria-hidden="true">03</span>
+        <span class="approche-step-label">Étape 03</span>
+        <h3>Construction</h3>
+        <p>On conçoit et on développe le site. Design dessiné pour votre métier, textes écrits à votre place, optimisé pour Google. Vous n'avez rien à rédiger.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- =================== SECTION 03 — POUR QUI =================== -->
-<section class="section alt" id="pour-qui">
+<!-- ====================================================================
+     SECTION · POUR QUI
+     ==================================================================== -->
+<section class="section" id="pour-qui" aria-label="Pour qui">
   <div class="container">
     <div class="section-head">
       <div class="reveal">
-        <span class="section-label">03 — Pour qui</span>
+        <span class="section-label">04 · Pour qui</span>
       </div>
       <div class="reveal d1">
         <h2 class="h-section">
-          Pour ceux qui font bien<br>
-          <em>et qui méritent d'être mieux vus.</em>
+          Pour ceux qui ont une expertise<br>
+          et une personnalité à <em>révéler.</em>
         </h2>
       </div>
     </div>
 
     <div class="audience">
-      <article class="aud-card reveal d1">
+      <article class="aud-card tilt reveal d1">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img id="aud-img-0" alt="Chantier de maîtrise d'œuvre" loading="lazy">
+          <img src="stone-room.jpg" alt="Pièce avec mur en pierres apparentes et verrière en acier noir" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 01</span>
           <h3>Maîtres d'œuvre</h3>
-          <p>Vous pilotez des chantiers complexes, coordonnez des équipes de confiance et livrez des projets qui durent. Vos clients vous recommandent. Mais en ligne, ça ne se voit pas encore — on change ça.</p>
-          <div class="aud-foot">
-            <span>Coordination</span>
-            <span>Pilotage</span>
-            <span>Expertise</span>
-          </div>
+          <p>Vous orchestrez des projets entiers et coordonnez les bons artisans. Cette vision d'ensemble, c'est votre vraie valeur. On la met en avant pour que vos clients comprennent, dès votre site, pourquoi c'est à vous de piloter leur projet.</p>
+          <a class="aud-link" href="maitre-oeuvre.html">Sites pour maîtres d'œuvre <span aria-hidden="true">→</span></a>
         </div>
       </article>
 
-      <article class="aud-card violet reveal d2">
+      <article class="aud-card blueprint tilt reveal d2">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img id="aud-img-1" alt="Intérieur design architecte" loading="lazy">
+          <img src="interior.jpg" alt="Salon avec canapé et bibliothèques en bois clair" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 02</span>
           <h3>Architectes d'intérieur</h3>
-          <p>Votre travail transforme des espaces et change la vie de vos clients. Vos réalisations parlent d'elles-mêmes — quand on les voit. On s'assure qu'elles soient vues par les bons yeux.</p>
-          <div class="aud-foot">
-            <span>Réalisations</span>
-            <span>Univers</span>
-            <span>Mise en valeur</span>
-          </div>
+          <p>Votre regard, votre style, votre façon de comprendre les gens qui vont vivre dans vos espaces : c'est ça, votre vraie expertise. On construit un site qui met en avant votre personnalité et votre univers, autant que vos réalisations.</p>
+          <a class="aud-link" href="architecte-interieur.html">Sites pour architectes d'intérieur <span aria-hidden="true">→</span></a>
         </div>
       </article>
 
-      <article class="aud-card charcoal reveal d3">
+      <article class="aud-card charcoal tilt reveal d3">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img id="aud-img-2" alt="Atelier artisan ébéniste" loading="lazy">
+          <img src="workshop.jpg" alt="Plan de travail en bois massif dans un atelier" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 03</span>
-          <h3>Artisans haut de gamme</h3>
-          <p>Cuisinistes, ébénistes, paysagistes concepteurs. Des années de perfectionnement, un savoir-faire rare. Il est temps que votre image soit à la hauteur de ce que vous produisez.</p>
-          <div class="aud-foot">
-            <span>Sur-mesure</span>
-            <span>Matière</span>
-            <span>Caractère</span>
-          </div>
+          <h3>Artisans du bâtiment</h3>
+          <p>Cuisinistes, ébénistes, paysagistes, métalliers, maçons. Votre savoir-faire se lit dans chaque détail de votre travail. On le traduit en un site qui inspire confiance et donne envie de vous confier le chantier.</p>
+          <a class="aud-link" href="artisan-batiment.html">Sites pour artisans du bâtiment <span aria-hidden="true">→</span></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- =================== SECTION 04 — MAQUETTE GRATUITE =================== -->
-<section class="section" id="maquette">
+<!-- ====================================================================
+     SECTION · ON COMMENCE ENSEMBLE (offre d'appel + contact fusionnés)
+     ==================================================================== -->
+<section class="section alt" id="contact" aria-label="On commence ensemble">
   <div class="container">
     <div class="mockup-grid">
-
-      <div>
-        <div class="mockup-intro reveal">
-          <span class="section-label" style="margin-bottom: 32px; display: inline-flex;">04 — Première étape</span>
-          <h2 class="h-section" style="margin-top: 24px;">
-            Voyez votre site<br>
-            <em>avant de décider.</em>
-          </h2>
-          <p class="lede" style="margin-top: 24px;">
-            On crée une maquette complète de votre futur site, sur mesure pour votre activité. Vous voyez exactement ce qu'on peut faire pour vous — gratuitement, sans engagement, sans condition.
-          </p>
+      <div class="mockup-intro">
+        <div class="reveal">
+          <span class="section-label">05 · On commence ensemble</span>
         </div>
+        <h2 class="h-section reveal d1">
+          Et si on commençait par<br>
+          <em>votre maquette ?</em>
+        </h2>
+        <p class="lede reveal d2">
+          Avant de vous demander quoi que ce soit, on vous montre concrètement ce qu'on ferait pour vous. Gratuit et sans engagement.
+        </p>
 
-        <div class="mockup-points reveal d1">
-          <div class="mockup-point">
-            <span class="mockup-point-num">01</span>
+        <div class="mockup-steps">
+          <div class="mockup-step reveal">
+            <span class="mockup-step-num">01</span>
             <div>
               <strong>On analyse votre activité</strong>
-              <p>On commence par comprendre votre métier, vos concurrents et vos clients. Ce qui prend du temps — mais qui fait toute la différence.</p>
+              <p>On regarde votre site actuel, vos concurrents, ce que disent vos clients. On comprend votre marché.</p>
             </div>
           </div>
-          <div class="mockup-point">
-            <span class="mockup-point-num">02</span>
+          <div class="mockup-step reveal d1">
+            <span class="mockup-step-num">02</span>
             <div>
               <strong>On crée votre maquette</strong>
-              <p>Design, textes, structure : on conçoit une version complète et personnalisée de votre futur site. Votre nom, votre activité, vos valeurs.</p>
+              <p>Design, textes, structure : une version complète et personnalisée de votre futur site. Votre nom, votre activité, votre identité.</p>
             </div>
           </div>
-          <div class="mockup-point">
-            <span class="mockup-point-num">03</span>
+          <div class="mockup-step reveal d2">
+            <span class="mockup-step-num">03</span>
             <div>
               <strong>On vous la présente</strong>
               <p>30 minutes, sans engagement. Vous voyez exactement ce qu'on ferait pour vous. Vous décidez ensuite, en toute liberté.</p>
@@ -1212,126 +1597,53 @@ footer {
           </div>
         </div>
 
-        <div class="mockup-cta reveal d2">
-          <a class="btn btn-primary" href="#contact">
+        <div class="mockup-cta reveal d3">
+          <button type="button" class="btn btn-primary" data-open-modal>
             Demander ma maquette gratuite
             <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <span class="mockup-note">Sans engagement · Réponse sous 48h</span>
+          </button>
+          <span class="mockup-note">Gratuite et sans engagement · Réponse sous 48h</span>
+        </div>
+
+        <div class="contact-coords reveal d3" style="justify-content: flex-start; margin-top: 40px;">
+          <a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a>
+          <a href="tel:+33673744323">+33 6 73 74 43 23</a>
         </div>
       </div>
 
       <div class="mockup-visual reveal d1">
-        <img id="mockup-img" alt="Aperçu d'une maquette de site Signal" loading="lazy">
-        <div class="mockup-badge">Gratuit — sans engagement</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- =================== SECTION 05 — L'AGENCE (DARK) =================== -->
-<section class="section dark" id="agence">
-  <div class="container">
-    <div class="section-head">
-      <div class="reveal">
-        <span class="section-label" style="color:#777;">05 — L'agence</span>
-      </div>
-      <div class="reveal d1">
-        <h2 class="h-section">
-          Une agence.<br>
-          <em>Une conviction.</em>
-        </h2>
-      </div>
-    </div>
-
-    <div class="about-grid">
-      <aside class="about-side reveal">
-        <div class="badge">
-          <span class="k">Approche</span>
-          <span class="v">Sur mesure</span>
-        </div>
-        <div class="badge">
-          <span class="k">Délais</span>
-          <span class="v">5 à 8 semaines</span>
-        </div>
-        <div class="badge">
-          <span class="k">Spécialité</span>
-          <span class="v">Bâtiment & artisanat</span>
-        </div>
-        <div class="badge">
-          <span class="k">Engagement</span>
-          <span class="v">Maquette gratuite offerte</span>
-        </div>
-      </aside>
-
-      <div class="about-copy reveal d1">
-        <p>
-          <strong>Notre conviction : un site internet ne devrait pas ressembler à tous les autres.</strong>
-          Mais surtout, il ne devrait pas mentir sur ce que vous êtes.
-          Chaque entreprise a quelque chose d'unique — le rôle d'un bon site,
-          c'est de le rendre évident, immédiatement.
-        </p>
-        <p>
-          On ne travaille pas à la chaîne. On prend le temps de comprendre chaque client,
-          d'analyser son marché, de formuler ce qui le distingue vraiment.
-          C'est plus long, c'est plus exigeant —
-          <strong>mais c'est ce qui fait la différence entre un site qui existe et un site qui vous ramène des clients.</strong>
-        </p>
+        <img src="materials.jpg" alt="Échantillons de matériaux (bois, pierre, lin, béton) sur une plaque de marbre" loading="lazy" width="1600" height="2000">
       </div>
     </div>
   </div>
 </section>
 
-<!-- =================== SECTION 06 — CONTACT =================== -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="reveal">
-      <span class="section-label" style="margin-bottom: 32px; justify-content: center; display: inline-flex;">06 — Contact</span>
-    </div>
-    <h2 class="reveal d1">
-      Discutons de <em>votre projet.</em>
-    </h2>
-    <p class="lede reveal d2">
-      Un premier échange de 30 minutes, sans engagement.
-      On écoute ce que vous faites, on vous explique ce qu'on ferait pour vous —
-      et si vous le souhaitez, on vous crée une maquette gratuite.
-    </p>
-    <div class="reveal d3">
-      <a class="btn btn-primary" href="mailto:arthur.brn44@gmail.com">
-        Prendre rendez-vous
-        <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-    <div class="contact-foot reveal d4">
-      <a href="mailto:arthur.brn44@gmail.com">arthur.brn44@gmail.com</a>
-      <a href="tel:+33673744323">+33 6 73 74 43 23</a>
-    </div>
-  </div>
-</section>
-
-<!-- =================== FOOTER =================== -->
+<!-- ====================================================================
+     FOOTER
+     ==================================================================== -->
 <footer>
   <div class="container">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">Signal<span class="dot" aria-hidden="true"></span></div>
-        <p class="foot-tag">Sites internet sur mesure pour maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment haut de gamme.</p>
+        <div class="foot-brand">À Pleine Ouverture<span class="dot" aria-hidden="true"></span></div>
+        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.</p>
       </div>
       <div class="foot-col">
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#evolution">Notre approche</a></li>
-          <li><a href="#apport">Ce qu'on apporte</a></li>
+          <li><a href="#qui-sommes-nous">Qui sommes-nous</a></li>
+          <li><a href="#constat">Le constat</a></li>
+          <li><a href="#approche">L'approche</a></li>
           <li><a href="#pour-qui">Pour qui</a></li>
-          <li><a href="#maquette">Maquette gratuite</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="maitre-oeuvre.html">Maîtres d'œuvre</a></li>
+          <li><a href="architecte-interieur.html">Architectes d'intérieur</a></li>
+          <li><a href="artisan-batiment.html">Artisans du bâtiment</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:arthur.brn44@gmail.com">arthur.brn44@gmail.com</a></li>
+          <li><a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a></li>
           <li><a href="tel:+33673744323">+33 6 73 74 43 23</a></li>
         </ul>
       </div>
@@ -1344,99 +1656,478 @@ footer {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Signal · Tous droits réservés</span>
-      <span>Sites sur mesure</span>
+      <span>© 2026 À Pleine Ouverture · Tous droits réservés</span>
+      <span>Rendez visible votre savoir-faire</span>
     </div>
   </div>
 </footer>
 
-<!-- =================== SCRIPTS =================== -->
+<!-- ====================================================================
+     MODALE · formulaire multi-étapes
+     ==================================================================== -->
+<div class="modal-backdrop" id="leadModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" data-close-modal aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+
+    <p class="modal-eyebrow">Maquette gratuite</p>
+    <h2 id="modalTitle">Faisons <em>connaissance.</em></h2>
+
+    <div class="modal-progress" aria-hidden="true">
+      <span class="on"></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <form id="leadForm" novalidate>
+      <div class="modal-steps">
+        <!-- Étape 1 -->
+        <div class="modal-step active" data-step="1">
+          <label class="field-label" for="f-name">Votre nom et prénom</label>
+          <input class="field-input" id="f-name" name="name" type="text" autocomplete="name" placeholder="Ex. Jean Dupont" required>
+          <p class="field-error" data-error>Merci d'indiquer votre nom et prénom.</p>
+        </div>
+
+        <!-- Étape 2 · entreprise -->
+        <div class="modal-step" data-step="2">
+          <label class="field-label" for="f-company">Le nom de votre entreprise</label>
+          <input class="field-input" id="f-company" name="company" type="text" autocomplete="organization" placeholder="Ex. Atelier Dupont" required>
+          <p class="field-error" data-error>Merci d'indiquer le nom de votre entreprise.</p>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="modal-step" data-step="3">
+          <label class="field-label" for="f-email">Votre adresse e-mail</label>
+          <input class="field-input" id="f-email" name="email" type="email" autocomplete="email" placeholder="Ex. jean@exemple.fr" required>
+          <p class="field-hint">On l'utilise uniquement pour vous envoyer votre maquette et vous recontacter.</p>
+          <p class="field-error" data-error>Merci d'indiquer une adresse e-mail valide.</p>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="modal-step" data-step="4">
+          <label class="field-label" for="f-phone">Votre numéro de téléphone</label>
+          <input class="field-input" id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Ex. 06 12 34 56 78" required>
+          <p class="field-hint">Pour vous rappeler et présenter votre maquette de vive voix.</p>
+          <p class="field-error" data-error>Merci d'indiquer un numéro de téléphone valide.</p>
+        </div>
+
+        <!-- Étape 5 -->
+        <div class="modal-step" data-step="5">
+          <label class="field-label" for="f-interest">Par quoi êtes-vous intéressé ?</label>
+          <select class="field-select" id="f-interest" name="interest" required>
+            <option value="" disabled selected>Choisissez une option…</option>
+            <option value="Améliorer mon site web">Améliorer mon site web</option>
+            <option value="Améliorer mon référencement (SEO)">Améliorer mon référencement (SEO)</option>
+            <option value="Créer mon site (je n'en ai pas encore)">Créer mon site (je n'en ai pas encore)</option>
+            <option value="Refonte complète de mon site">Refonte complète de mon site</option>
+            <option value="Autre">Autre</option>
+          </select>
+          <p class="field-hint">Ça nous aide à préparer une maquette vraiment adaptée à votre besoin.</p>
+          <p class="field-error" data-error>Merci de choisir une option.</p>
+        </div>
+
+        <!-- Succès -->
+        <div class="modal-step" data-step="success">
+          <div class="modal-success">
+            <div class="check" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h2>C'est noté, merci !</h2>
+            <p>On a bien reçu votre demande. On revient vers vous sous 48h pour préparer votre maquette gratuite.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions" data-actions>
+        <button type="button" class="modal-back" data-back hidden>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Retour
+        </button>
+        <button type="submit" class="modal-next" data-next>
+          <span data-next-label>Suivant</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ====================================================================
+     SCRIPTS
+     ==================================================================== -->
 <script>
 (function () {
   'use strict';
 
-  /* ─── Image paths ─── */
-  var NEW_ANIM = "Nouvelle photo animation";
-  var PHOTO    = "Photo";
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer  = window.matchMedia('(pointer: fine)').matches;
 
-  function setImg(id, path) {
-    var el = document.getElementById(id);
-    if (el) el.src = path;
-  }
+  /* ====================================================================
+     HERO · Plan-séquence scrubé au scroll (ralenti)
+     ==================================================================== */
+  (function setupHero() {
+    var hero    = document.getElementById('top');
+    var sticky  = document.getElementById('heroSticky');
+    var video   = document.getElementById('heroVideo');
+    var intro   = document.getElementById('heroIntro');
+    var content = document.getElementById('heroContent');
+    if (!hero || !video || !content || !sticky || !intro) return;
 
-  // Hero — ciel uniquement
-  setImg('img-sky', NEW_ANIM + '/Gemini_Generated_Image_jmllqwjmllqwjmll.png');
+    var words = Array.prototype.slice.call(hero.querySelectorAll('.hero-word'));
 
-  // Évolution frames
-  setImg('evo-img-0', PHOTO + '/Gemini_Generated_Image_eycxl5eycxl5eycx.png');
-  setImg('evo-img-1', PHOTO + '/Gemini_Generated_Image_8kyxbr8kyxbr8kyx.png');
-  setImg('evo-img-2', PHOTO + '/Gemini_Generated_Image_fukg9jfukg9jfukg.png');
-  setImg('evo-img-3', PHOTO + '/Gemini_Generated_Image_qbk7q1qbk7q1qbk7.png');
-
-  // Audience cards
-  setImg('aud-img-0', PHOTO + '/Gemini_Generated_Image_hru2zjhru2zjhru2.png');
-  setImg('aud-img-1', PHOTO + '/Gemini_Generated_Image_ahxur8ahxur8ahxu.png');
-  setImg('aud-img-2', PHOTO + '/Gemini_Generated_Image_11llp111llp111ll.png');
-
-  // Mockup
-  setImg('mockup-img', PHOTO + '/Gemini_Generated_Image_wq1fydwq1fydwq1f.png');
-
-  /* ─── Entry animation trigger ─── */
-  requestAnimationFrame(function () {
-    requestAnimationFrame(function () {
-      document.body.classList.add('loaded');
-    });
-  });
-
-  /* ─── Nav scroll blur ─── */
-  var nav = document.getElementById('nav');
-  function onScroll() {
-    if (window.scrollY > 12) nav.classList.add('is-scrolled');
-    else nav.classList.remove('is-scrolled');
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* ─── Reveal on scroll ─── */
-  var revealIO = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        revealIO.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal:not(.in)').forEach(function (el) {
-    revealIO.observe(el);
-  });
-
-  /* ─── Évolution scroll-driven ─── */
-  (function () {
-    var chapters = document.querySelectorAll('#evoChapters .evo-chapter');
-    var frames   = document.querySelectorAll('#evoSticky .evo-frame');
-    if (!chapters.length || !frames.length) return;
-
-    function setActive(stage) {
-      chapters.forEach(function (c) { c.classList.toggle('active', +c.dataset.stage === stage); });
-      frames.forEach(function (f)   { f.classList.toggle('active', +f.dataset.stage === stage); });
+    if (reduceMotion) {
+      intro.style.setProperty('--intro-opacity', 0);
+      content.style.setProperty('--text-opacity', 1);
+      content.classList.add('is-revealed');
+      return;
     }
 
-    var evoIO = new IntersectionObserver(function (entries) {
-      var visible = entries.filter(function (e) { return e.isIntersecting; });
-      if (!visible.length) return;
-      var vh = window.innerHeight;
-      var best = null, bestDist = Infinity;
-      visible.forEach(function (e) {
-        var rect = e.target.getBoundingClientRect();
-        var dist = Math.abs((rect.top + rect.height / 2) - vh / 2);
-        if (dist < bestDist) { bestDist = dist; best = e.target; }
-      });
-      if (best) setActive(+best.dataset.stage);
-    }, { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-30% 0px -30% 0px' });
+    var SCRUB_END        = 0.90;
+    var INTRO_FADE_START = 0.06;
+    var INTRO_FADE_END   = 0.18;
+    var TEXT_START       = 0.82;
+    var TEXT_END         = 0.92;
+    var FINAL_VEIL_AT    = 0.74;
 
-    chapters.forEach(function (c) { evoIO.observe(c); });
-    setActive(0);
+    // Fenêtres des mots [fadeIn, full, full, fadeOut] en phase (= scroll).
+    // Séquentielles, sans chevauchement, sur un scroll continu et fluide.
+    var BANDS = [
+      [0.24, 0.32, 0.44, 0.52],
+      [0.54, 0.60, 0.70, 0.78]
+    ];
+
+    // Scrub linéaire : la phase suit directement le scroll (pas de
+    // remapping). Tout est fluide, sans accélération ni à-coup.
+
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    function clamp01(v) { return Math.max(0, Math.min(1, v)); }
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    function bandOpacity(p, b) {
+      if (p <= b[0] || p >= b[3]) return 0;
+      if (p < b[1]) return easeOutCubic((p - b[0]) / (b[1] - b[0]));
+      if (p <= b[2]) return 1;
+      return 1 - easeInOutCubic((p - b[2]) / (b[3] - b[2]));
+    }
+
+    var mqMobile = window.matchMedia('(max-width: 767px)');
+    var videoVisible = !mqMobile.matches;
+    var onMq = function (e) { videoVisible = !e.matches; };
+    if (mqMobile.addEventListener) mqMobile.addEventListener('change', onMq);
+    else if (mqMobile.addListener) mqMobile.addListener(onMq);
+
+    var duration    = 0;
+    var rafId       = null;
+    var smoothPhase = 0;
+
+    function compute() {
+      var rect = hero.getBoundingClientRect();
+      var scrollRange = Math.max(1, hero.offsetHeight - window.innerHeight);
+      var s = clamp01(Math.max(0, -rect.top) / scrollRange);
+
+      // Inertie un peu plus douce (0.12) → atterrissage plus lent et fluide.
+      // Lissage : la phase glisse en douceur vers la position de scroll,
+      // pour un rendu fluide sans saut (aucun blocage).
+      var phaseTarget = s;
+      smoothPhase = lerp(smoothPhase, phaseTarget, 0.11);
+      if (Math.abs(phaseTarget - smoothPhase) < 0.0006) smoothPhase = phaseTarget;
+      var p = smoothPhase;
+
+      if (duration > 0 && videoVisible) {
+        var target = clamp01(p / SCRUB_END) * (duration - 0.05);
+        if (target < 0) target = 0;
+        if (video.readyState >= 2 && Math.abs(video.currentTime - target) > 0.012) {
+          try { video.currentTime = target; } catch (_) {}
+        }
+      }
+
+      var introFade = clamp01((p - INTRO_FADE_START) / (INTRO_FADE_END - INTRO_FADE_START));
+      intro.style.setProperty('--intro-opacity', 1 - easeInOutCubic(introFade));
+
+      for (var i = 0; i < words.length; i++) {
+        var op = bandOpacity(p, BANDS[i]);
+        words[i].style.opacity = op;
+        words[i].style.transform = 'translateY(' + ((1 - op) * 14) + 'px)';
+      }
+
+      var textProgress = clamp01((p - TEXT_START) / (TEXT_END - TEXT_START));
+      content.style.setProperty('--text-opacity', easeOutCubic(textProgress));
+      if (textProgress > 0.4) content.classList.add('is-revealed');
+      else content.classList.remove('is-revealed');
+
+      if (p < 0.04) sticky.classList.add('is-start');
+      else sticky.classList.remove('is-start');
+
+      if (p >= FINAL_VEIL_AT) sticky.classList.add('is-final');
+      else sticky.classList.remove('is-final');
+
+      rafId = requestAnimationFrame(compute);
+    }
+
+    cancelAnimationFrame(rafId);
+    compute();
+
+    function onMeta() { duration = video.duration || 0; }
+    if (video.readyState >= 1 && video.duration) onMeta();
+    else video.addEventListener('loadedmetadata', onMeta, { once: true });
+
+    video.addEventListener('error', function () {
+      sticky.style.background = 'linear-gradient(180deg,#2a2018 0%,#1a1410 100%)';
+      content.style.setProperty('--text-opacity', 1);
+      content.classList.add('is-revealed');
+    });
+
+    /* Parallaxe à la souris sur le plan-séquence (mouvement subtil). */
+    if (finePointer) {
+      var px = 0, py = 0, tx = 0, ty = 0, parRaf = null;
+      function parLoop() {
+        px += (tx - px) * 0.08;
+        py += (ty - py) * 0.08;
+        video.style.setProperty('--par-x', px.toFixed(2) + 'px');
+        video.style.setProperty('--par-y', py.toFixed(2) + 'px');
+        parRaf = requestAnimationFrame(parLoop);
+      }
+      sticky.addEventListener('pointermove', function (e) {
+        var r = sticky.getBoundingClientRect();
+        tx = ((e.clientX - r.left) / r.width - 0.5) * 26;
+        ty = ((e.clientY - r.top) / r.height - 0.5) * 26;
+        if (!parRaf) parLoop();
+      });
+      sticky.addEventListener('pointerleave', function () { tx = 0; ty = 0; });
+    }
+  })();
+
+  /* Plus de "contrôleur d'arrêts" : le scroll du hero est désormais
+     continu et fluide. La vidéo et les textes suivent la molette en
+     douceur (lissage). La vitesse se règle uniquement via la hauteur
+     de .hero, pas par des blocages. */
+
+  /* ====================================================================
+     NAV · état au scroll
+     ==================================================================== */
+  var nav = document.getElementById('nav');
+  function onNavScroll() {
+    if (window.scrollY > 24) nav.classList.add('is-scrolled');
+    else nav.classList.remove('is-scrolled');
+  }
+  window.addEventListener('scroll', onNavScroll, { passive: true });
+  onNavScroll();
+
+  /* ====================================================================
+     REVEAL on scroll
+     ==================================================================== */
+  if ('IntersectionObserver' in window) {
+    var revealIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          revealIO.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { revealIO.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ====================================================================
+     INTERACTIONS SOURIS · halo, tilt cartes, boutons magnétiques
+     ==================================================================== */
+  if (finePointer && !reduceMotion) {
+    // Halo qui suit la souris (section L'approche)
+    document.querySelectorAll('.glow-host').forEach(function (host) {
+      var glow = host.querySelector('.glow');
+      if (!glow) return;
+      host.addEventListener('pointermove', function (e) {
+        var r = host.getBoundingClientRect();
+        glow.style.setProperty('--gx', (e.clientX - r.left) + 'px');
+        glow.style.setProperty('--gy', (e.clientY - r.top) + 'px');
+      });
+    });
+
+    // Tilt 3D sur les cartes
+    document.querySelectorAll('.tilt').forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
+        var r = card.getBoundingClientRect();
+        var cx = (e.clientX - r.left) / r.width - 0.5;
+        var cy = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty('--ry', (cx * 6).toFixed(2) + 'deg');
+        card.style.setProperty('--rx', (-cy * 6).toFixed(2) + 'deg');
+        card.style.setProperty('--ty', '-4px');
+      });
+      card.addEventListener('pointerleave', function () {
+        card.style.setProperty('--ry', '0deg');
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ty', '0px');
+      });
+    });
+
+    // Boutons magnétiques (attirés par le curseur)
+    document.querySelectorAll('.btn-primary, .nav-cta, .modal-next').forEach(function (btn) {
+      btn.classList.add('mag');
+      btn.addEventListener('pointermove', function (e) {
+        var r = btn.getBoundingClientRect();
+        var mx = (e.clientX - r.left - r.width / 2) * 0.25;
+        var my = (e.clientY - r.top - r.height / 2) * 0.35;
+        btn.style.transform = 'translate(' + mx.toFixed(1) + 'px,' + my.toFixed(1) + 'px)';
+      });
+      btn.addEventListener('pointerleave', function () { btn.style.transform = ''; });
+    });
+  }
+
+  /* ====================================================================
+     MODALE · formulaire multi-étapes + envoi Web3Forms
+     --------------------------------------------------------------------
+     ⚠️ À FAIRE (1 minute) : récupère ta clé Web3Forms gratuite sur
+     https://web3forms.com (tu entres ton e-mail, ils t'envoient la clé)
+     puis colle-la ci-dessous à la place de VOTRE_CLE_WEB3FORMS.
+     Les leads (nom, e-mail, tél, intérêt) arriveront alors directement
+     dans ta boîte mail.
+     ==================================================================== */
+  var WEB3FORMS_KEY = 'abce287d-93d5-4c92-82a6-7e308ca032ea';
+
+  (function setupModal() {
+    var modal   = document.getElementById('leadModal');
+    var form    = document.getElementById('leadForm');
+    if (!modal || !form) return;
+
+    var dots      = modal.querySelectorAll('.modal-progress span');
+    var steps     = Array.prototype.slice.call(form.querySelectorAll('.modal-step'));
+    var backBtn   = form.querySelector('[data-back]');
+    var nextBtn   = form.querySelector('[data-next]');
+    var nextLabel = form.querySelector('[data-next-label]');
+    var actions   = form.querySelector('[data-actions]');
+    var lastFocus = null;
+    var current   = 1; // étapes 1..5, puis "success"
+    var TOTAL     = 5;
+
+    function stepEl(n) { return steps.find(function (s) { return s.getAttribute('data-step') == String(n); }); }
+
+    function show(n) {
+      steps.forEach(function (s) { s.classList.remove('active'); });
+      var el = (n === 'success') ? stepEl('success') : stepEl(n);
+      if (el) el.classList.add('active');
+
+      if (n === 'success') {
+        actions.style.display = 'none';
+        for (var i = 0; i < dots.length; i++) dots[i].classList.add('on');
+        return;
+      }
+      actions.style.display = '';
+      backBtn.hidden = (n === 1);
+      nextLabel.textContent = (n === TOTAL) ? 'Terminer' : 'Suivant';
+      for (var j = 0; j < dots.length; j++) dots[j].classList.toggle('on', j < n);
+
+      var input = el.querySelector('input, select');
+      if (input) setTimeout(function () { input.focus(); }, 60);
+    }
+
+    function clearError(el) {
+      var err = el.querySelector('[data-error]');
+      if (err) err.classList.remove('show');
+    }
+    function showError(el) {
+      var err = el.querySelector('[data-error]');
+      if (err) err.classList.add('show');
+    }
+
+    function validate(n) {
+      var el = stepEl(n);
+      var field = el.querySelector('input, select');
+      if (!field) return true;
+      var v = (field.value || '').trim();
+      var ok = true;
+      if (n === 3) { ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+      else if (n === 4) { ok = v.replace(/[^\d]/g, '').length >= 8; }
+      else { ok = v.length > 0; }
+      if (ok) clearError(el); else showError(el);
+      return ok;
+    }
+
+    function open() {
+      lastFocus = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      current = 1;
+      show(1);
+    }
+    function close() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    document.querySelectorAll('[data-open-modal]').forEach(function (btn) {
+      btn.addEventListener('click', open);
+    });
+    modal.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+      btn.addEventListener('click', close);
+    });
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+
+    backBtn.addEventListener('click', function () {
+      if (current > 1) { current--; show(current); }
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!validate(current)) return;
+      if (current < TOTAL) { current++; show(current); return; }
+      submit();
+    });
+
+    function submit() {
+      nextBtn.disabled = true;
+      nextLabel.textContent = 'Envoi…';
+
+      var payload = {
+        access_key: WEB3FORMS_KEY,
+        subject: 'Nouvelle demande de maquette · À Pleine Ouverture',
+        from_name: 'À Pleine Ouverture',
+        name:     form.querySelector('#f-name').value.trim(),
+        company:  form.querySelector('#f-company').value.trim(),
+        email:    form.querySelector('#f-email').value.trim(),
+        phone:    form.querySelector('#f-phone').value.trim(),
+        interest: form.querySelector('#f-interest').value
+      };
+
+      // Si la clé n'est pas encore configurée, on évite l'appel réseau
+      // mais on confirme quand même au visiteur (les infos sont prêtes).
+      if (WEB3FORMS_KEY === 'VOTRE_CLE_WEB3FORMS') {
+        console.warn('[Web3Forms] Cle non configuree : renseigne WEB3FORMS_KEY dans index.html.');
+        console.info('[Lead capté]', payload);
+        current = 'success'; show('success');
+        nextBtn.disabled = false;
+        return;
+      }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data && data.success) { current = 'success'; show('success'); }
+        else { throw new Error(data && data.message ? data.message : 'Échec de l\'envoi'); }
+      })
+      .catch(function (err) {
+        console.error('[Web3Forms]', err);
+        nextBtn.disabled = false;
+        nextLabel.textContent = 'Réessayer';
+        var el = stepEl(TOTAL);
+        showError(el);
+        var errEl = el.querySelector('[data-error]');
+        if (errEl) errEl.textContent = 'Une erreur est survenue. Vérifiez votre connexion et réessayez, ou écrivez-nous directement.';
+      });
+    }
   })();
 
 })();
