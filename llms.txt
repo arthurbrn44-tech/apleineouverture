@@ -11,10 +11,10 @@
 
 ## Pages
 
-- [Accueil](https://www.apleineouverture.fr/) : présentation de l'agence, de l'approche en trois étapes (immersion, positionnement, construction) et de l'offre de maquette gratuite.
-- [Sites pour maîtres d'œuvre](https://www.apleineouverture.fr/maitre-oeuvre.html) : un site qui explique le rôle du maître d'œuvre et gagne la comparaison face aux architectes et constructeurs.
-- [Sites pour architectes d'intérieur](https://www.apleineouverture.fr/architecte-interieur.html) : un site qui révèle le style, la personnalité et les réalisations de l'architecte d'intérieur.
-- [Sites pour artisans du bâtiment](https://www.apleineouverture.fr/artisan-batiment.html) : un site qui montre les chantiers et attire des clients directs, sans dépendre des plateformes de devis.
+- [Accueil](https://apleineouverture.fr/) : présentation de l'agence, de l'approche en trois étapes (immersion, positionnement, construction) et de l'offre de maquette gratuite.
+- [Sites pour maîtres d'œuvre](https://apleineouverture.fr/maitre-oeuvre.html) : un site qui explique le rôle du maître d'œuvre et gagne la comparaison face aux architectes et constructeurs.
+- [Sites pour architectes d'intérieur](https://apleineouverture.fr/architecte-interieur.html) : un site qui révèle le style, la personnalité et les réalisations de l'architecte d'intérieur.
+- [Sites pour artisans du bâtiment](https://apleineouverture.fr/artisan-batiment.html) : un site qui montre les chantiers et attire des clients directs, sans dépendre des plateformes de devis.
 
 ## Contact
 
