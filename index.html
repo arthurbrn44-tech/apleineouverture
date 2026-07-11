@@ -51,17 +51,10 @@
 }
 </script>
 
-<!-- ===== Google Analytics ===== -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQ9D77WMC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-6ZQ9D77WMC');
-</script>
+<!-- ===== Google Analytics (chargé uniquement après consentement, voir cookie-consent.js) ===== -->
 
 <!-- ===== Performance ===== -->
-<link rel="preload" as="video" href="journey.mp4" type="video/mp4">
+<link rel="preload" as="video" href="journey.mp4" type="video/mp4" media="(min-width: 768px)">
 <link rel="preload" as="image" href="hero-poster.jpg">
 <meta name="theme-color" content="#F7F4EE">
 
@@ -315,7 +308,7 @@ section { position: relative; }
 }
 .nav-links a:hover::after { transform: scaleX(1); }
 .nav-cta {
-  display: none;
+  display: inline-flex;
   font-family: var(--sans);
   font-weight: 500;
   font-size: 13.5px;
@@ -327,9 +320,14 @@ section { position: relative; }
   will-change: transform;
 }
 .nav-cta:hover { background: var(--accent-dk); transform: translateY(-1px); }
+.nav-cta .cta-short { display: none; }
+@media (max-width: 767px) {
+  .nav-cta { padding: 9px 14px; font-size: 13px; }
+  .nav-cta .cta-long { display: none; }
+  .nav-cta .cta-short { display: inline; }
+}
 @media (min-width: 1024px) {
   .nav-links { display: inline-flex; }
-  .nav-cta { display: inline-flex; }
 }
 
 /* ====================================================================
@@ -540,6 +538,14 @@ section { position: relative; }
 @media (max-width: 767px) {
   .hero-ctas { flex-direction: column; gap: 16px; }
   .hero { height: 560vh; }
+  /* Mobile : titres sans retours à la ligne forcés (évite le débordement
+     horizontal), vidéo remplacée par l'image poster (économise ~7 Mo). */
+  .hero-h1 { font-size: clamp(36px, 11vw, 44px); }
+  .hero-video { display: none; }
+  .hero-sticky { background: url('hero-poster.jpg') center / cover no-repeat #0A0A0A; }
+  .h-section br { display: none; }
+  .h-section, .hero-h1, .constat-title, .qui-lead { overflow-wrap: anywhere; }
+  .brand { font-size: 19px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -825,7 +831,7 @@ section { position: relative; }
   grid-template-columns: 1fr;
   gap: 24px;
 }
-@media (min-width: 1024px) { .audience { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .audience { grid-template-columns: repeat(2, 1fr); } }
 .aud-card {
   background: #fff;
   border: 1px solid var(--line);
@@ -1290,7 +1296,7 @@ footer {
         <a href="#approche">L'approche</a>
         <a href="#pour-qui">Pour qui</a>
       </nav>
-      <button type="button" class="nav-cta" data-open-modal>Demander ma maquette</button>
+      <button type="button" class="nav-cta" data-open-modal><span class="cta-long">Demander ma maquette</span><span class="cta-short">Maquette gratuite</span></button>
     </div>
   </div>
 </header>
@@ -1304,7 +1310,7 @@ footer {
            id="heroVideo"
            src="journey.mp4"
            poster="hero-poster.jpg"
-           preload="auto"
+           preload="metadata"
            muted
            playsinline
            disablepictureinpicture
@@ -1516,13 +1522,13 @@ footer {
       <article class="aud-card tilt reveal d1">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img src="stone-room.jpg" alt="Pièce avec mur en pierres apparentes et verrière en acier noir" loading="lazy" width="1600" height="1200">
+          <img src="blueprints.jpg" alt="Plans d'architecte sur une table de travail" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 01</span>
-          <h3>Maîtres d'œuvre</h3>
-          <p>Vous orchestrez des projets entiers et coordonnez les bons artisans. Cette vision d'ensemble, c'est votre vraie valeur. On la met en avant pour que vos clients comprennent, dès votre site, pourquoi c'est à vous de piloter leur projet.</p>
-          <a class="aud-link" href="maitre-oeuvre.html">Sites pour maîtres d'œuvre <span aria-hidden="true">→</span></a>
+          <h3>Architectes</h3>
+          <p>Vos futurs clients ne savent pas juger un plan ni un permis : ils choisissent l'architecte qu'ils comprennent, celui qui les met en confiance. On construit un site qui dit pourquoi vous, pour quels projets, et comment ça se passe de travailler avec vous.</p>
+          <a class="aud-link" href="architecte.html">Sites pour architectes <span aria-hidden="true">→</span></a>
         </div>
       </article>
 
@@ -1539,13 +1545,26 @@ footer {
         </div>
       </article>
 
-      <article class="aud-card charcoal tilt reveal d3">
+      <article class="aud-card tilt reveal d1">
+        <div class="aud-band"></div>
+        <div class="aud-photo">
+          <img src="stone-room.jpg" alt="Pièce avec mur en pierres apparentes et verrière en acier noir" loading="lazy" width="1600" height="1200">
+        </div>
+        <div class="aud-body">
+          <span class="aud-label">// Profil 03</span>
+          <h3>Maîtres d'œuvre</h3>
+          <p>Vous orchestrez des projets entiers et coordonnez les bons artisans. Cette vision d'ensemble, c'est votre vraie valeur. On la met en avant pour que vos clients comprennent, dès votre site, pourquoi c'est à vous de piloter leur projet.</p>
+          <a class="aud-link" href="maitre-oeuvre.html">Sites pour maîtres d'œuvre <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="aud-card charcoal tilt reveal d2">
         <div class="aud-band"></div>
         <div class="aud-photo">
           <img src="workshop.jpg" alt="Plan de travail en bois massif dans un atelier" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
-          <span class="aud-label">// Profil 03</span>
+          <span class="aud-label">// Profil 04</span>
           <h3>Artisans du bâtiment</h3>
           <p>Cuisinistes, ébénistes, paysagistes, métalliers, maçons. Votre savoir-faire se lit dans chaque détail de votre travail. On le traduit en un site qui inspire confiance et donne envie de vous confier le chantier.</p>
           <a class="aud-link" href="artisan-batiment.html">Sites pour artisans du bâtiment <span aria-hidden="true">→</span></a>
@@ -1626,7 +1645,7 @@ footer {
     <div class="foot-grid">
       <div>
         <div class="foot-brand">À Pleine Ouverture<span class="dot" aria-hidden="true"></span></div>
-        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.</p>
+        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des architectes, architectes d'intérieur, maîtres d'œuvre et artisans du bâtiment.</p>
       </div>
       <div class="foot-col">
         <h4>Navigation</h4>
@@ -1635,6 +1654,7 @@ footer {
           <li><a href="#constat">Le constat</a></li>
           <li><a href="#approche">L'approche</a></li>
           <li><a href="#pour-qui">Pour qui</a></li>
+          <li><a href="architecte.html">Architectes</a></li>
           <li><a href="maitre-oeuvre.html">Maîtres d'œuvre</a></li>
           <li><a href="architecte-interieur.html">Architectes d'intérieur</a></li>
           <li><a href="artisan-batiment.html">Artisans du bâtiment</a></li>
@@ -1652,6 +1672,7 @@ footer {
         <ul>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
           <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="#" onclick="window.apoOpenCookiePreferences(); return false;">Gérer les cookies</a></li>
         </ul>
       </div>
     </div>
@@ -1679,6 +1700,7 @@ footer {
     </div>
 
     <form id="leadForm" novalidate>
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
       <div class="modal-steps">
         <!-- Étape 1 -->
         <div class="modal-step active" data-step="1">
@@ -1722,6 +1744,7 @@ footer {
             <option value="Autre">Autre</option>
           </select>
           <p class="field-hint">Ça nous aide à préparer une maquette vraiment adaptée à votre besoin.</p>
+          <p class="field-hint">En envoyant, vous acceptez qu'on utilise ces informations pour vous recontacter. Détails : <a href="confidentialite.html" style="text-decoration: underline;">politique de confidentialité</a>.</p>
           <p class="field-error" data-error>Merci de choisir une option.</p>
         </div>
 
@@ -1979,12 +2002,7 @@ footer {
 
   /* ====================================================================
      MODALE · formulaire multi-étapes + envoi Web3Forms
-     --------------------------------------------------------------------
-     ⚠️ À FAIRE (1 minute) : récupère ta clé Web3Forms gratuite sur
-     https://web3forms.com (tu entres ton e-mail, ils t'envoient la clé)
-     puis colle-la ci-dessous à la place de VOTRE_CLE_WEB3FORMS.
-     Les leads (nom, e-mail, tél, intérêt) arriveront alors directement
-     dans ta boîte mail.
+     (clé publique Web3Forms : prévue pour être visible côté navigateur)
      ==================================================================== */
   var WEB3FORMS_KEY = 'abce287d-93d5-4c92-82a6-7e308ca032ea';
 
@@ -2095,7 +2113,8 @@ footer {
         company:  form.querySelector('#f-company').value.trim(),
         email:    form.querySelector('#f-email').value.trim(),
         phone:    form.querySelector('#f-phone').value.trim(),
-        interest: form.querySelector('#f-interest').value
+        interest: form.querySelector('#f-interest').value,
+        botcheck: form.querySelector('input[name="botcheck"]').checked
       };
 
       // Si la clé n'est pas encore configurée, on évite l'appel réseau
@@ -2132,6 +2151,8 @@ footer {
 
 })();
 </script>
+
+<script src="cookie-consent.js"></script>
 
 </body>
 </html>

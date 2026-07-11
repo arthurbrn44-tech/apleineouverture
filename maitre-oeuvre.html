@@ -280,6 +280,16 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
 .reveal.in { opacity: 1; transform: none; }
 .reveal.d1 { transition-delay: 0.1s; } .reveal.d2 { transition-delay: 0.2s; } .reveal.d3 { transition-delay: 0.3s; }
 
+.nav-cta .cta-short { display: none; }
+@media (max-width: 767px) {
+  .nav-cta { padding: 9px 14px; font-size: 13px; }
+  .nav-cta .cta-long { display: none; }
+  .nav-cta .cta-short { display: inline; }
+  .ph-title br, .h-section br { display: none; }
+  .ph-title, .h-section { overflow-wrap: anywhere; }
+  .brand { font-size: 19px; }
+}
+
 ::selection { background: var(--accent); color: #fff; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -335,7 +345,7 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
         Accueil
       </a>
-      <button type="button" class="nav-cta" data-open-modal>Demander ma maquette</button>
+      <button type="button" class="nav-cta" data-open-modal><span class="cta-long">Demander ma maquette</span><span class="cta-short">Maquette gratuite</span></button>
     </div>
   </div>
 </header>
@@ -495,7 +505,7 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
     <div class="foot-grid">
       <div>
         <div class="foot-brand">À Pleine Ouverture<span class="dot" aria-hidden="true"></span></div>
-        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment.</p>
+        <p class="foot-tag">Des sites internet qui rendent visible le savoir-faire des architectes, architectes d'intérieur, maîtres d'œuvre et artisans du bâtiment.</p>
       </div>
       <div class="foot-col">
         <h4>Navigation</h4>
@@ -503,11 +513,7 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
           <li><a href="index.html#qui-sommes-nous">Qui sommes-nous</a></li>
           <li><a href="index.html#approche">L'approche</a></li>
           <li><a href="index.html#pour-qui">Pour qui</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Métiers</h4>
-        <ul>
+          <li><a href="architecte.html">Architectes</a></li>
           <li><a href="maitre-oeuvre.html">Maîtres d'œuvre</a></li>
           <li><a href="architecte-interieur.html">Architectes d'intérieur</a></li>
           <li><a href="artisan-batiment.html">Artisans du bâtiment</a></li>
@@ -518,6 +524,14 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
         <ul>
           <li><a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a></li>
           <li><a href="tel:+33673744323">+33 6 73 74 43 23</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="#" onclick="window.apoOpenCookiePreferences(); return false;">Gérer les cookies</a></li>
         </ul>
       </div>
     </div>
@@ -537,6 +551,7 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
       <span class="on"></span><span></span><span></span><span></span><span></span>
     </div>
     <form id="leadForm" novalidate>
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
       <div class="modal-steps">
         <div class="modal-step active" data-step="1">
           <label class="field-label" for="f-name">Votre nom et prénom</label>
@@ -571,6 +586,7 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
             <option value="Autre">Autre</option>
           </select>
           <p class="field-hint">Ça nous aide à préparer une maquette vraiment adaptée à votre besoin.</p>
+          <p class="field-hint">En envoyant, vous acceptez qu'on utilise ces informations pour vous recontacter. Détails : <a href="confidentialite.html" style="text-decoration: underline;">politique de confidentialité</a>.</p>
           <p class="field-error" data-error>Merci de choisir une option.</p>
         </div>
         <div class="modal-step" data-step="success">
@@ -713,7 +729,8 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
       email:    form.querySelector('#f-email').value.trim(),
       phone:    form.querySelector('#f-phone').value.trim(),
       interest: form.querySelector('#f-interest').value,
-      page:     'maitre-oeuvre'
+      page:     'maitre-oeuvre',
+      botcheck: form.querySelector('input[name="botcheck"]').checked
     };
     if (WEB3FORMS_KEY === 'VOTRE_CLE_WEB3FORMS') {
       console.warn('[Web3Forms] Cle non configuree : renseigne WEB3FORMS_KEY.');
@@ -740,6 +757,8 @@ footer { background: var(--concrete-2); color: #d4cdc4; padding: 56px 0 32px; fo
   }
 })();
 </script>
+
+<script src="cookie-consent.js"></script>
 
 </body>
 </html>
