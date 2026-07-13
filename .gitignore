@@ -1,6 +1,7 @@
 .DS_Store
 Thumbs.db
 *.log
+.env
 sources-video/
 Continue_from_the_provided_ima.mp4
 Video entré maison.mp4
@@ -11,3 +12,5 @@ skills-lock.json
 Nouvelle photo animation/
 PRODUCT.md
 CLAUDE.md
+_backup-images-ia/
+banque-images/
