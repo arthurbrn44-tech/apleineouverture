@@ -36,7 +36,7 @@
   "description": "Agence de création de sites internet spécialisée pour les maîtres d'œuvre, architectes d'intérieur et artisans du bâtiment. Positionnement, textes, design et référencement : un site qui attire des clients mieux qualifiés.",
   "url": "https://apleineouverture.fr",
   "telephone": "+33673744323",
-  "email": "a.baron@apleineouverture.fr",
+  "email": "abaron@apleineouverture.fr",
   "founder": { "@type": "Person", "name": "Arthur Baron" },
   "areaServed": { "@type": "Country", "name": "France" },
   "knowsAbout": ["Sites internet pour maîtres d'œuvre", "Sites internet pour architectes d'intérieur", "Sites internet pour artisans du bâtiment"],
@@ -966,6 +966,49 @@ section { position: relative; }
 }
 .mockup-visual img { width: 100%; height: 100%; object-fit: cover; }
 
+/* Signature « c'est moi qui m'en occupe » sous le CTA maquette */
+.mockup-signature {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.mockup-signature img {
+  width: 72px;
+  height: 72px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+.mockup-sig-name {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--ink);
+}
+.mockup-sig-role {
+  display: block;
+  margin-top: 6px;
+  max-width: 44ch;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.mockup-signature .contact-coords {
+  margin-top: 18px;
+  justify-content: flex-start;
+  gap: 8px 28px;
+}
+@media (max-width: 480px) {
+  .mockup-signature { gap: 16px; }
+  .mockup-signature img { width: 60px; height: 60px; }
+}
+
 /* ====================================================================
    CONTACT (clôture condensée)
    ==================================================================== */
@@ -1624,9 +1667,16 @@ footer {
           <span class="mockup-note">Gratuite et sans engagement · Réponse sous 48h</span>
         </div>
 
-        <div class="contact-coords reveal d3" style="justify-content: flex-start; margin-top: 40px;">
-          <a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a>
-          <a href="tel:+33673744323">+33 6 73 74 43 23</a>
+        <div class="mockup-signature reveal d3">
+          <img src="portrait-arthur.jpg" alt="Arthur Baron, fondateur d'À Pleine Ouverture" width="400" height="400" loading="lazy" decoding="async">
+          <div>
+            <strong class="mockup-sig-name">Arthur Baron</strong>
+            <span class="mockup-sig-role">Fondateur</span>
+            <div class="contact-coords">
+              <a href="mailto:abaron@apleineouverture.fr">abaron@apleineouverture.fr</a>
+              <a href="https://calendly.com/abaron-apleineouverture/30min" target="_blank" rel="noopener">Prendre rendez-vous</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1663,7 +1713,7 @@ footer {
       <div class="foot-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:a.baron@apleineouverture.fr">a.baron@apleineouverture.fr</a></li>
+          <li><a href="mailto:abaron@apleineouverture.fr">abaron@apleineouverture.fr</a></li>
           <li><a href="tel:+33673744323">+33 6 73 74 43 23</a></li>
         </ul>
       </div>
@@ -2004,7 +2054,7 @@ footer {
      MODALE · formulaire multi-étapes + envoi Web3Forms
      (clé publique Web3Forms : prévue pour être visible côté navigateur)
      ==================================================================== */
-  var WEB3FORMS_KEY = 'abce287d-93d5-4c92-82a6-7e308ca032ea';
+  var WEB3FORMS_KEY = '727248cd-7146-43e4-bed7-7eb62384d587';
 
   (function setupModal() {
     var modal   = document.getElementById('leadModal');
