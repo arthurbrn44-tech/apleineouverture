@@ -55,7 +55,7 @@
 
 <!-- ===== Performance ===== -->
 <link rel="preload" as="video" href="journey.mp4" type="video/mp4" media="(min-width: 768px)">
-<link rel="preload" as="image" href="hero-poster.jpg">
+<link rel="preload" as="image" href="hero-poster.webp">
 <meta name="theme-color" content="#F7F4EE">
 
 <!-- ===== Fonts ===== -->
@@ -542,7 +542,7 @@ section { position: relative; }
      horizontal), vidéo remplacée par l'image poster (économise ~7 Mo). */
   .hero-h1 { font-size: clamp(36px, 11vw, 44px); }
   .hero-video { display: none; }
-  .hero-sticky { background: url('hero-poster.jpg') center / cover no-repeat #0A0A0A; }
+  .hero-sticky { background: url('hero-poster.webp') center / cover no-repeat #0A0A0A; }
   .h-section br { display: none; }
   .h-section, .hero-h1, .constat-title, .qui-lead { overflow-wrap: anywhere; }
   .brand { font-size: 19px; }
@@ -757,7 +757,7 @@ section { position: relative; }
 .approche-bg {
   position: absolute;
   inset: 0;
-  background-image: url('blueprints.jpg');
+  background-image: url('blueprints.webp');
   background-size: cover;
   background-position: center;
   filter: blur(2px);
@@ -1351,9 +1351,9 @@ footer {
   <div class="hero-sticky" id="heroSticky">
     <video class="hero-video"
            id="heroVideo"
-           src="journey.mp4"
-           poster="hero-poster.jpg"
-           preload="auto"
+           data-src="journey.mp4"
+           poster="hero-poster.webp"
+           preload="none"
            muted
            playsinline
            disablepictureinpicture
@@ -1436,7 +1436,7 @@ footer {
       </div>
 
       <div class="qui-visual reveal d1">
-        <img src="letter.jpg" alt="Note manuscrite « Clarté visuelle » posée sur un bureau en bois" loading="lazy" width="1600" height="2000">
+        <img src="letter.webp" alt="Note manuscrite « Clarté visuelle » posée sur un bureau en bois" loading="lazy" width="1600" height="2000">
       </div>
     </div>
   </div>
@@ -1455,7 +1455,7 @@ footer {
 
     <div class="constat-grid">
       <div class="constat-visual reveal">
-        <img src="laptop.jpg" alt="Site internet d'entreprise affiché sur un ordinateur portable" loading="lazy" width="1600" height="1200">
+        <img src="laptop.webp" alt="Site internet d'entreprise affiché sur un ordinateur portable" loading="lazy" width="1600" height="1200">
       </div>
 
       <div>
@@ -1565,7 +1565,7 @@ footer {
       <article class="aud-card tilt reveal d1">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img src="blueprints.jpg" alt="Plans d'architecte sur une table de travail" loading="lazy" width="1600" height="1200">
+          <img src="blueprints.webp" alt="Plans d'architecte sur une table de travail" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 01</span>
@@ -1578,7 +1578,7 @@ footer {
       <article class="aud-card blueprint tilt reveal d2">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img src="interior.jpg" alt="Salon avec canapé et bibliothèques en bois clair" loading="lazy" width="1600" height="1200">
+          <img src="interior.webp" alt="Salon avec canapé et bibliothèques en bois clair" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 02</span>
@@ -1591,7 +1591,7 @@ footer {
       <article class="aud-card tilt reveal d1">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img src="stone-room.jpg" alt="Pièce avec mur en pierres apparentes et verrière en acier noir" loading="lazy" width="1600" height="1200">
+          <img src="stone-room.webp" alt="Pièce avec mur en pierres apparentes et verrière en acier noir" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 03</span>
@@ -1604,7 +1604,7 @@ footer {
       <article class="aud-card charcoal tilt reveal d2">
         <div class="aud-band"></div>
         <div class="aud-photo">
-          <img src="workshop.jpg" alt="Plan de travail en bois massif dans un atelier" loading="lazy" width="1600" height="1200">
+          <img src="workshop.webp" alt="Plan de travail en bois massif dans un atelier" loading="lazy" width="1600" height="1200">
         </div>
         <div class="aud-body">
           <span class="aud-label">// Profil 04</span>
@@ -1668,7 +1668,7 @@ footer {
         </div>
 
         <div class="mockup-signature reveal d3">
-          <img src="portrait-arthur.jpg" alt="Arthur Baron, fondateur d'À Pleine Ouverture" width="400" height="400" loading="lazy" decoding="async">
+          <img src="portrait-arthur.webp" alt="Arthur Baron, fondateur d'À Pleine Ouverture" width="400" height="400" loading="lazy" decoding="async">
           <div>
             <strong class="mockup-sig-name">Arthur Baron</strong>
             <span class="mockup-sig-role">Fondateur</span>
@@ -1681,7 +1681,7 @@ footer {
       </div>
 
       <div class="mockup-visual reveal d1">
-        <img src="materials.jpg" alt="Échantillons de matériaux (bois, pierre, lin, béton) sur une plaque de marbre" loading="lazy" width="1600" height="2000">
+        <img src="materials.webp" alt="Échantillons de matériaux (bois, pierre, lin, béton) sur une plaque de marbre" loading="lazy" width="1600" height="2000">
       </div>
     </div>
   </div>
@@ -1887,13 +1887,31 @@ footer {
 
     var mqMobile = window.matchMedia('(max-width: 767px)');
     var videoVisible = !mqMobile.matches;
-    var onMq = function (e) { videoVisible = !e.matches; };
+
+    /* La vidéo n'est téléchargée que sur écran large. Sur mobile elle est masquée
+       en CSS et remplacée par le poster : inutile de dépenser 2,5 Mo de data. */
+    function ensureVideoSource() {
+      if (!video.getAttribute('src')) {
+        var src = video.getAttribute('data-src');
+        if (!src) return;
+        video.setAttribute('src', src);
+        video.load();
+      }
+    }
+    if (videoVisible) ensureVideoSource();
+
+    var onMq = function (e) {
+      videoVisible = !e.matches;
+      if (videoVisible) ensureVideoSource();
+    };
     if (mqMobile.addEventListener) mqMobile.addEventListener('change', onMq);
     else if (mqMobile.addListener) mqMobile.addListener(onMq);
 
     var duration    = 0;
     var rafId       = null;
     var smoothPhase = 0;
+    var running     = false;
+    var snapNext    = false;
 
     function compute() {
       var rect = hero.getBoundingClientRect();
@@ -1904,14 +1922,15 @@ footer {
       // Lissage : la phase glisse en douceur vers la position de scroll,
       // pour un rendu fluide sans saut (aucun blocage).
       var phaseTarget = s;
-      smoothPhase = lerp(smoothPhase, phaseTarget, 0.11);
+      if (snapNext) { smoothPhase = phaseTarget; snapNext = false; }
+      else smoothPhase = lerp(smoothPhase, phaseTarget, 0.11);
       if (Math.abs(phaseTarget - smoothPhase) < 0.0006) smoothPhase = phaseTarget;
       var p = smoothPhase;
 
       if (duration > 0 && videoVisible) {
         var target = clamp01(p / SCRUB_END) * (duration - 0.05);
         if (target < 0) target = 0;
-        if (video.readyState >= 2 && Math.abs(video.currentTime - target) > 0.012) {
+        if (video.readyState >= 2 && !video.seeking && Math.abs(video.currentTime - target) > 0.012) {
           try { video.currentTime = target; } catch (_) {}
         }
       }
@@ -1936,11 +1955,32 @@ footer {
       if (p >= FINAL_VEIL_AT) sticky.classList.add('is-final');
       else sticky.classList.remove('is-final');
 
-      rafId = requestAnimationFrame(compute);
+      if (running) rafId = requestAnimationFrame(compute);
     }
 
-    cancelAnimationFrame(rafId);
-    compute();
+    /* La boucle ne tourne que tant que le hero est à l'écran. Plus bas dans la
+       page, on rend la main au navigateur : scroll plus léger, moins de batterie. */
+    function startLoop() {
+      if (running) return;
+      running = true;
+      snapNext = true;
+      compute();
+    }
+    function stopLoop() {
+      if (!running) return;
+      running = false;
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+
+    startLoop();
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) startLoop();
+        else stopLoop();
+      }, { rootMargin: '250px' }).observe(hero);
+    }
 
     function onMeta() { duration = video.duration || 0; }
     if (video.readyState >= 1 && video.duration) onMeta();
@@ -1960,15 +2000,19 @@ footer {
         py += (ty - py) * 0.08;
         video.style.setProperty('--par-x', px.toFixed(2) + 'px');
         video.style.setProperty('--par-y', py.toFixed(2) + 'px');
+        if (Math.abs(tx - px) < 0.04 && Math.abs(ty - py) < 0.04) { parRaf = null; return; }
         parRaf = requestAnimationFrame(parLoop);
       }
       sticky.addEventListener('pointermove', function (e) {
         var r = sticky.getBoundingClientRect();
         tx = ((e.clientX - r.left) / r.width - 0.5) * 26;
         ty = ((e.clientY - r.top) / r.height - 0.5) * 26;
-        if (!parRaf) parLoop();
+        if (!parRaf) parRaf = requestAnimationFrame(parLoop);
       });
-      sticky.addEventListener('pointerleave', function () { tx = 0; ty = 0; });
+      sticky.addEventListener('pointerleave', function () {
+        tx = 0; ty = 0;
+        if (!parRaf) parRaf = requestAnimationFrame(parLoop);
+      });
     }
   })();
 
